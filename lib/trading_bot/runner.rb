@@ -362,7 +362,6 @@ sweep_results = []
       #      breakout_entry_values.each do |be|
        #       breakout_exit_values.each do |bx|
 
-# Run 1,000 random parameter combinations (or set to whatever number you want)
 1000.times do |i|
   stop_mult   = atr_stop_values.sample
   profit_mult = atr_profit_values.sample
@@ -737,7 +736,7 @@ if metrics_path
   end
 end
 
-# ✅ In sweep mode, write a metrics row immediately from the best result
+#  In sweep mode, write a metrics row immediately from the best result
 metrics_path = ENV["METRICS_CSV"]
 if metrics_path && !scored.empty?
   best = scored.first
