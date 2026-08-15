@@ -10,7 +10,6 @@ puts "🔍 Timestamp: #{Time.now.utc}"
 sleep 1
 $global_active_slots = 0
 $active_tickers = []
-# --- kill any leftover IO/preview monkey patches ---
 begin
   $stdout = STDOUT
   $stderr = STDERR
@@ -23,7 +22,6 @@ begin
     warn "[IO_SHIM_NEUTER_FAIL] #{e.class}: #{e.message}"
   end
 
-# Safe no-op writer for bad shims that call NilClass#write
 begin
   unless ::NilClass.method_defined?(:write)
     ::NilClass.class_eval do
@@ -43,7 +41,6 @@ require "date"
 require "set"
 require "time"   # for iso8601
 
-# --- HARDEN AGAINST BUGGY SHIMS ---
 $stdout = STDOUT rescue $stdout
 $stderr = STDERR rescue $stderr
 $stdout.sync = $stderr.sync = true
