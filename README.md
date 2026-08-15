@@ -197,7 +197,7 @@ Some of the main engineering problems addressed in this project include:
 
 Maxime Romano
 
-- GitHub: [YOUR-USERNAME](https://github.com/MaxRomano-dev)
+- GitHub: [MaxRomano-dev](https://github.com/MaxRomano-dev)
 - Demo video: https://youtu.be/J3wijqzeO4o
 
 ## License
