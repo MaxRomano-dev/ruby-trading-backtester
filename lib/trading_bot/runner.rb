@@ -651,7 +651,6 @@ end
 # 🚀 Rank results, print winner + top 5, and save ranked CSV
 
 scored = sweep_results.map do |h|
-  # if you want to recompute score, you can; otherwise keep h[:score]
   h
 end
 
