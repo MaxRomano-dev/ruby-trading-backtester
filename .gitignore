@@ -11,5 +11,8 @@ gui/runs/
 gui/data_runs/
 data/clean/*
 !data/clean/.gitkeep
-!data/clean/sample/
-!data/clean/sample/**
+!data/clean/DELL_GOOGLEFINANCE_AUTOUPTODATE.csv
+!data/clean/NVDA_GOOGLEFINANCE_AUTOUPTODATE.csv
+!data/clean/QQQ_GOOGLEFINANCE_AUTOUPTODATE.csv
+!data/clean/VIXY_GOOGLEFINANCE_AUTOUPTODATE.csv
+
