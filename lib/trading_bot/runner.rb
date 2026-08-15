@@ -325,35 +325,16 @@ end
   # PARAMETER SWEEP MODE
   # ===============================
 
-#atr_stop_values       = [3.2, 3.6, 4.0, 4.4]
-#atr_profit_values     = [6.0, 7.0, 8.0, 9.0, 10.0]
-#sma_filter_values     = [200]
-#rsi_oversold_values   = [8, 10, 12, 14]
-#rsi_overbought_values = [88, 90, 92, 94]
-#breakout_entry_values = [20, 25, 30]
-#breakout_exit_values  = [8, 10]
 
-# Crypto trends break the 200 SMA frequently. 
-# Testing faster institutional filters (50, 100) and a 'No-Filter' (0) bear-market hunter.
-#sma_filter_values     = [0, 100, 200]
+
 sma_filter_values     = [0, 100, 200]
 
 rsi2_period_values = [1, 2, 3, 4, 5]
 rsi3_period_values = [1, 2, 3, 4, 5]
 
 
-#rsi2_period_values = [3]
-#rsi3_period_values = [3]
-
-
-#rsi2_period_values = [2]
-#rsi3_period_values = [2]
-
-#rsi2_period_values = [2, 3, 4, 5, 8, 10, 12, 14]
-#rsi3_period_values = [2, 3, 4, 5, 8, 10, 12, 14]
 
 # Entry Settings: Deep Crypto Liquidation/Cascading Margin Calls
-#rsi_oversold_values   = (3..20).to_a
 rsi_oversold_values = (0..35).to_a
 
 # Exit Settings: The Parabolic Ride
@@ -509,7 +490,6 @@ yearly = {}
 # Show the very first trade across all symbols
 puts "First trade: #{all_trades.first[:symbol]} on #{all_trades.first[:entry_date]}" if all_trades.any?
 
-# ✅ Sort by entry_date so earliest trades (like MSFT 2000) are included
 all_trades.sort_by { |t| t[:entry_date] }.each do |t|
   year = t[:exit_date][0,4].to_i   # return counts for the year it closed
   capital *= (1 + t[:pct_return].to_f / 100.0)
@@ -775,15 +755,15 @@ if metrics_path && !scored.empty?
     ]
   end
   ENV["METRICS_CSV_ALREADY_WRITTEN"] = "1"
-  puts "[BOT_METRICS] ✅ sweep metrics written → #{metrics_path}"
+  puts "[BOT_METRICS] sweep metrics written → #{metrics_path}"
 end
 
 # =====================================================
 #  FINAL REAL METRICS EXPORT FOR TUNER
 # =====================================================
 begin
-  metrics_path = ENV["METRICS_CSV"]   # ✅ keep this line
-  if metrics_path                     # ✅ change condition to this
+  metrics_path = ENV["METRICS_CSV"]   #  keep this line
+  if metrics_path                     #  change condition to this
     latest_summary = Dir.glob(File.join(RESULTS_DIR, "hybrid_v3_summary.csv"))
                          .max_by { |f| File.mtime(f) rescue Time.at(0) }
 
@@ -817,7 +797,7 @@ ENV["METRICS_CSV_ALREADY_WRITTEN"] = "1"   # ← add this
 end
 
 if File.size?(metrics_path).to_i > 60
-  puts "[BOT_METRICS] ✅ confirmed metrics file is fully written and visible"
+  puts "[BOT_METRICS]  confirmed metrics file is fully written and visible"
 else
   puts "[BOT_METRICS] ⚠️ file may still be small (tuner might need a few more sec)"
 end
@@ -1164,9 +1144,6 @@ if all_trades.any?
   puts "Latest   trade: #{all_trades.last[:symbol]} from #{all_trades.last[:entry_date]} to #{all_trades.last[:exit_date]}"
 end
 
-#puts "MSFT trades count: #{all_trades.count { |t| t[:symbol] =~ /MSFT/ }}"
-#puts "Earliest MSFT trade: #{all_trades.select { |t| t[:symbol] =~ /MSFT/ }.map { |t| t[:entry_date] }.min}"
-
 # Save master file of combined trades
 main_trades_path = File.join(RESULTS_DIR, "hybrid_v3_all_trades.csv")
 
@@ -1178,7 +1155,6 @@ CSV.open(main_trades_path, "w") do |csv|
 end
 puts "[SAVED] #{main_trades_path}"
 #rebuild_tomorrow_orders_from_trades!(TOMORROW_ORDERS_CSV, all_trades)
-# 👇 NEW: make a safe copy for experiments (With_Buys)
 with_buys_path = File.join(RESULTS_DIR, "hybrid_v3_all_trades_With_Buys.csv")
 
 begin
@@ -1898,7 +1874,7 @@ all_trades.each_with_index do |t, i|
   end
 end
 
-puts "Overlap check: #{overlaps.empty? ? '✅ None found' : '⚠️ Overlaps detected!'}"
+puts "Overlap check: #{overlaps.empty? ? ' None found' : '⚠️ Overlaps detected!'}"
 
 # ===============================
 # BUILD MANUAL TRADES FILE (from executed signals)
@@ -1942,7 +1918,7 @@ if File.exist?(File.join(RESULTS_DIR, "hybrid_v3_all_signals.csv"))
       csv << %w[symbol entry_date exit_date entry exit pct_return]
       manual_trades.each { |t| csv << [t[:symbol], t[:entry_date], t[:exit_date], t[:entry], t[:exit], t[:pct_return]] }
     end
-    puts "[SAVED] ✅ Manual trades saved to #{manual_trades_path} (#{manual_trades.size} completed trades)"
+    puts "[SAVED]  Manual trades saved to #{manual_trades_path} (#{manual_trades.size} completed trades)"
   else
     puts "[INFO] No completed manual trades found yet."
   end
