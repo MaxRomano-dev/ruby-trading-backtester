@@ -94,8 +94,8 @@ Depending on the selected mode, the application reports:
 ### Installation
 
 ```bash
-git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY.git
-cd YOUR-REPOSITORY
+git clone https://github.com/MaxRomano-dev/ruby-trading-backtester.git
+cd ruby-trading-backtester
 bundle install
 ```
 
