@@ -1777,8 +1777,8 @@ if position && eth_sym?(symbol)
   position[:peak] ||= position[:entry]
   position[:peak]  = [position[:peak], close].max
   drop_pct = (position[:peak] - close) / position[:peak] * 100.0
-  arm_mult = 1.22   # ✅ +20% (not +10%)
-  giveback = 9.5    # -8% from peak
+  arm_mult = 1.22   
+  giveback = 9.5    
   exit_triggered ||= (drop_pct >= giveback && position[:peak] > position[:entry] * arm_mult)
 end
 
@@ -1787,8 +1787,8 @@ if position && btc_sym?(symbol)
   position[:peak] ||= position[:entry]
   position[:peak]  = [position[:peak], close].max
   drop_pct = (position[:peak] - close) / position[:peak] * 100.0
-  arm_mult = 1.23   # ✅ +10%
-  giveback = 7.9    # -8% from peak
+  arm_mult = 1.23    
+  giveback = 7.9    
   exit_triggered ||= (drop_pct >= giveback && position[:peak] > position[:entry] * arm_mult)
 end
 =end
@@ -1816,7 +1816,6 @@ if exit_triggered
 fill = exit_price || close
 
   if exit_price
-     # puts "[DEBUG_NEXT_OPEN_FILL] #{symbol} #{date} close=#{close} next_open_fill=#{fill}"
   end
 
   trades << {
@@ -1830,7 +1829,7 @@ fill = exit_price || close
   @last_sell_date = date
   @last_fcx_loss  = date if symbol.to_s.include?("FCX") && trades.last[:pct_return].to_f < 0
 
-  # ✅ NEW: record the SELL signal for this actual exit
+  #  NEW: record the SELL signal for this actual exit
   sell_key = [date, symbol, "SELL"]
   unless existing_rows.include?(sell_key)
   write_csv_unless_fast(multi_signal_path, [date, symbol, "SELL", fill])
@@ -1921,7 +1920,7 @@ end
 
 =end
   
-# ✅ append BUY/SELL only once per (date, symbol, signal)
+#  append BUY/SELL only once per (date, symbol, signal)
 if ["BUY", "SELL"].include?(chosen_signal)
   key = [date, symbol, chosen_signal]
   unless existing_rows.include?(key)
@@ -1952,7 +1951,7 @@ if position
     pct_return: ((closes.last - position[:entry]) / position[:entry] * 100).round(2)
   }
 
-  # ✅ also write SELL for end-of-data close
+  #  also write SELL for end-of-data close
   sell_key = [dates.last, symbol, "SELL"]
   unless existing_rows.include?(sell_key)
     write_csv_unless_fast(multi_signal_path, [dates.last, symbol, "SELL", closes.last])
