@@ -16,7 +16,6 @@ begin
   $stderr = STDERR
   $stdout.sync = $stderr.sync = true
 
-  # some shims add a bogus NilClass#write; remove it
   if ::NilClass.method_defined?(:write)
      ::NilClass.send(:remove_method, :write) rescue nil
   end
@@ -67,7 +66,7 @@ if !tuner_metrics.empty? && (!File.exist?(tuner_metrics) || File.size?(tuner_met
 
     File.open(tuner_metrics, "w") do |io|
       io.puts "symbol,trades,win_rate,pf,cagr,max_drawdown"
-      io.puts "BOOT,0,0,0,0,0"   # 👈 placeholder row the finalizer is allowed to replace
+      io.puts "BOOT,0,0,0,0,0"   #  placeholder row the finalizer is allowed to replace
     end
 
     ENV["METRICS_BOOT_PATH"] = tuner_metrics
@@ -78,14 +77,13 @@ rescue => e
 end
 
 # =====================================================
-# ✅ Safe metrics writer for tuner (prevents Hash→Integer crash)
+# Safe metrics writer for tuner (prevents Hash→Integer crash)
 # =====================================================
-# --- SAFETY PATCH: define placeholder early ---
 def safe_write_metrics(path, data)
   begin
     FileUtils.mkdir_p(File.dirname(path)) rescue nil
 
-    # ✅ Flatten once immediately
+    #  Flatten once immediately
     data = case data
            when Hash
              data.transform_values { |v| v.is_a?(Hash) ? v.values.first.to_s : v.to_s }
@@ -111,9 +109,7 @@ end
 $LOAD_PATH.unshift(File.join(BOT_ROOT, "lib"))
 
 require File.join(BOT_ROOT, "lib", "symbol_policies", "fcx_volatility_policy")
-#require_relative "lib/symbol_policies/nvda_time_stop_big_loss"
-#require_relative "lib/symbol_policies/earnings_guard"
-#require_relative "lib/symbol_policies/time_stop_big_loss"
+
 
 BASE_DIR = BOT_ROOT
 
@@ -148,7 +144,7 @@ def export_metrics_if_possible(metrics_path, summary_path)
     csv << [row["symbol"], row["trades"], row["win_rate"], row["pf"], row["cagr"], row["max_drawdown"]]
   end
 
-  puts "[BOT_METRICS] ✅ metrics copied → #{metrics_path}"
+  puts "[BOT_METRICS]  metrics copied → #{metrics_path}"
   true
 end
 
@@ -170,7 +166,6 @@ end
 
 # set by fast_sweep.rb when it requires this file
 $FAST_SWEEP ||= false
-# in Best_Trading_Bot_Hybrid_RSI_Breakout_Strategies_xxK.rb
 $FAST_SWEEP = %w[1 true yes].include?(ENV["FAST_SWEEP"].to_s.downcase)
 
 $vol_cfg ||= {}
