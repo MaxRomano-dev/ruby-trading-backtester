@@ -66,8 +66,6 @@ hold_map = {
 end
 
 
-#Before: 17
-#Good: 9
 
   sep = detect_sep(file_path)
   rows = CSV.read(file_path,
@@ -191,7 +189,6 @@ current_wday = current_date.wday
  hold_days = (current_date - entry_date).to_i
 
 
-  # 🔥 NEW: Tuesday → Friday exit
   if entry_wday == 2 && current_wday == 5
     puts "[TUE→FRI EXIT] #{symbol} | Held: #{hold_days}d"
 
@@ -554,11 +551,10 @@ if momentum_signal == "BUY" && chosen_signal != "SELL"
 end
 =end
 
-# --- GLOBAL POSITION CAP (The Nuclear DD Shield) ---
 # This variable must be tracked globally. 
 # If any ticker in your list is currently 'in a trade', skip everything else.
 # =============================================================
-# === UNIFIED STRATEGY LOGIC 8.1 (The "Fortress" Version) ===
+# === UNIFIED STRATEGY LOGIC 8.1  ===
 # =============================================================
 
 # --- STEP 1: MOMENTUM FILTER (Waterfall Protection) ---
@@ -569,7 +565,6 @@ if i >= 3
   #"MOD", "FIX", "BTCUSD", "ETHUSD", "IBIT", "MSTR", "ETHA", "MU", "QCOM", "TSM", "MRVL", "MA", "CAT", "DE",
   #"GS", "MS", "JPM", "KKR", "META", "LLY", "TSLA", "COIN", "BLK", "GOOGL", "NVT"]
   
-  # KINGS can buy the blood. 
   # SURGICALS and VOLATILES must wait for a green day (Close > Prev Close).
   unless kings.include?(ticker_name)
     if closes[i] <= closes[i-1] # If today is red or flat, wait.
@@ -597,7 +592,6 @@ if position
 # === THE MASTER RELEASE (Add this at the bottom of Step 2) ===
 # --- STEP 2: MASTER EXIT EXECUTION ---
   if exit_triggered || sell_signal
-    # 1. 🛰️ UNIVERSAL RELEASE (Add this here)
     if position
       # Reduce the global slot count
       $global_active_slots -= 1
@@ -954,7 +948,6 @@ end
   ticker_name = symbol.split("_").first
   current_date = Date.parse(date[0,10])
 
-# 1. THE GOLDEN FILTER (The Bear Market Circuit Breaker)
 # 1. ELITE FILTER
 is_elite = true # Directly force this to true!
 #master_elites = ["SMCI", "SMR", "NVDA", "VRT", "LRCX", "ARM", "VST", "CCJ", "GEV", 
@@ -1496,7 +1489,6 @@ if position
     exit_triggered ||= true
     sell_signal = true
 
-    # ✅ keep your next-open realism
     exit_price =
       if opens && (i + 1) < opens.length && opens[i + 1]
         opens[i + 1].to_f
