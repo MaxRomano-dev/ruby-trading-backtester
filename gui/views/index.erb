@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Trading Bot Control Center</title>
+  <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="/v03.css?v=22">
+</head>
+<body>
+  <div class="shell">
+    <aside>
+      <div class="brand"><span class="logo">↗</span><span>Trading Bot</span></div>
+      <nav>
+        <button class="nav-item active" data-view="dashboard"><span>▦</span> Dashboard</button>
+        <button class="nav-item" data-view="runner"><span>▷</span> Run Backtest</button>
+        <button class="nav-item" data-view="data-manager" hidden><span>⇩</span> Data Manager</button>
+        <button class="nav-item" data-mode="sweep"><span>▤</span> Sweep Parameters</button>
+        <button class="nav-item" data-view="results"><span>≡</span> Symbol Results</button>
+        <button class="nav-item" data-view="signals"><span>⇥</span> Tomorrow Signals</button>
+        <button class="nav-item" data-view="history"><span>◷</span> Run History</button>
+      </nav>
+      <div class="connection"><i></i><span>Local connection</span><small>Version 1.9.0</small></div>
+    </aside>
+
+    <div class="workspace">
+      <header>
+        <div><h1>Trading Bot Control Center</h1><p>Run and monitor your Ruby strategy locally</p></div>
+        <div class="header-status"><span><i></i> Bot ready</span><span id="clock"></span></div>
+      </header>
+
+      <main>
+        <section class="kpis" id="dashboard">
+          <article><span>Next-Open CAGR</span><strong id="metric-cagr">—</strong></article>
+          <article><span>Next-Open Profit Factor</span><strong id="metric-pf">—</strong></article>
+          <article><span>Next-Open Max Drawdown</span><strong class="danger" id="metric-maxdd">—</strong></article>
+          <article><span>Next-Open Win Rate</span><strong id="metric-winrate">—</strong></article>
+          <article><span>Next-Open Trades</span><strong class="neutral" id="metric-trades">—</strong></article>
+          <article><span>Next-Open Final Equity</span><strong id="metric-equity">—</strong></article>
+        </section>
+
+        <section class="panel equity-panel">
+          <div class="panel-title"><div><h2>Next-Open Equity Curve</h2><p>Next-open what-if equity versus QQQ buy-and-hold over the same period</p><small id="benchmark-status" class="benchmark-status">QQQ status appears after a completed run.</small></div><div class="chart-legends"><span class="chart-legend"><i></i> Next-open strategy</span><label class="benchmark-toggle"><input type="checkbox" id="benchmark-toggle"><span><i></i> QQQ benchmark</span></label></div></div>
+          <div class="chart-wrap">
+            <svg id="equity-chart" viewBox="0 0 800 260" role="img" aria-label="Yearly equity curve">
+              <g id="chart-grid"></g><path id="chart-area"></path><polyline id="chart-line"></polyline><polyline id="benchmark-line"></polyline><g id="chart-points"></g><g id="chart-labels"></g>
+            </svg>
+            <div id="chart-empty">Run a backtest to display the yearly equity curve.</div>
+          </div>
+        </section>
+
+        <section class="panel positions-panel" id="positions">
+          <div class="panel-title"><div><h2>Live Positions</h2><p>Editable local tracker — changes save automatically</p></div><button type="button" id="add-position">＋ Add Position</button></div>
+          <div class="table-wrap"><table class="positions-table"><thead><tr><th>Ticker</th><th>Shares</th><th>Entry</th><th>Current</th><th>Market Value</th><th>P/L $</th><th>P/L %</th><th>Stop</th><th></th></tr></thead><tbody id="positions-body"></tbody><tfoot><tr><th colspan="4">Portfolio totals</th><th id="positions-value">$0.00</th><th id="positions-pl">$0.00</th><th id="positions-percent">0.00%</th><th colspan="2"></th></tr></tfoot></table></div>
+        </section>
+
+        <section class="panel data-manager" id="data-manager" hidden>
+          <div class="panel-title"><div><h2>Tiingo Data Manager</h2><p>Download, verify and move market-data files before running the strategy</p></div><div class="console-controls"><label>Console<select id="data-console-view"><option value="clean">Clean</option><option value="full">Full</option></select></label><span class="run-status idle" id="data-status">IDLE</span></div></div>
+          <form id="data-form">
+            <label class="wide">Tiingo Download Source<select name="data_source"><option value="standard">Standard / historical updater</option><option value="current">Current / live data updater</option></select><small>Chooses which approved Tiingo Ruby downloader runs in Step 1.</small></label>
+            <label class="wide">Symbols to download<textarea name="download_symbols" rows="4"><%= download_symbols.join(', ') %></textarea><small>QQQ and VIXY are included as benchmark and volatility data.</small></label>
+            <label class="wide">Symbols to run after updating<textarea name="symbols" rows="3"><%= data_trade_symbols.join(', ') %></textarea><small>Used only by Update Data &amp; Run Bot.</small></label>
+            <input type="hidden" name="mode" value="backtest">
+            <input type="hidden" name="settings_source" value="internal">
+            <input type="hidden" name="one_trade" value="false">
+            <label>Backtest From<input type="date" name="from" value="2020-01-01"></label>
+            <label>Backtest To<input type="date" name="to" value="2026-12-29"></label>
+            <label>Start Equity ($)<input type="number" step="any" name="start_equity" value="50000"></label>
+            <div class="data-actions wide"><button type="button" id="check-data">Check Data Status</button><button type="button" id="update-data">Update Market Data</button><button type="button" id="stop-data" disabled>Stop</button><button type="button" class="primary" id="update-run">Update Data &amp; Run Bot</button></div>
+          </form>
+          <div class="data-grid">
+            <div class="table-wrap"><table><thead><tr><th>Symbol</th><th>First Date</th><th>Last Date</th><th>Rows</th><th>Status</th></tr></thead><tbody id="data-rows"><tr class="empty"><td colspan="5">Click Check Data Status to inspect the current CSV files.</td></tr></tbody></table></div>
+            <pre id="data-console">Data workflow output will appear here.</pre>
+          </div>
+        </section>
+
+        <div class="grid">
+          <section class="panel controls" id="runner">
+            <div class="panel-title"><div><h2>Run Strategy</h2><p>Configure the command sent to your existing bot</p></div><span class="pill" id="mode-pill">BACKTEST</span></div>
+            <div class="preset-bar"><select id="preset-select"><option value="">Saved presets…</option></select><button type="button" id="load-preset">Load Preset</button><button type="button" id="save-preset">Save</button><button type="button" id="delete-preset">Delete Preset</button></div>
+            <div class="backup-bar"><span>Browser data backup</span><button type="button" id="export-gui-data">Export</button><button type="button" id="import-gui-data">Import</button><input type="file" id="import-gui-file" accept="application/json,.json" hidden></div>
+            <form id="bot-form">
+              <input type="hidden" name="symbols" value="<%= symbols.join(',') %>">
+              <input type="hidden" name="symbol_universe" value="<%= symbols.join(',') %>">
+              <section class="symbol-manager wide">
+                <div class="symbol-toolbar"><div><strong>Portfolio Symbols</strong><small id="symbol-count"><%= symbols.length %> enabled</small></div><div><button type="button" id="add-symbol">＋ Add Symbol</button><button type="button" id="select-all-symbols">Select All</button><button type="button" id="clear-symbols">Clear All</button></div></div>
+                <div class="symbol-table-wrap"><table class="symbol-table"><thead><tr><th>Enabled</th><th>Symbol</th><th>Configuration</th><th></th></tr></thead><tbody id="symbol-rows"></tbody></table></div>
+              </section>
+              <label>From<input type="date" name="from" value="2020-01-01"></label>
+              <label>To<input type="date" name="to" value="2026-12-29"></label>
+              <label>Mode<select name="mode"><option value="backtest">Backtest</option><option value="sweep">Sweep</option></select></label>
+              <label class="wide sweep-capture disabled">Sweep Output File<select name="sweep_capture" disabled><option value="off">Do not create the named sweep file</option><option value="overwrite">Overwrite sweep_output_tomorrow_buy_order.txt</option><option value="append">Append to sweep_output_tomorrow_buy_order.txt</option></select><small>Equivalent to Tee-Object for Sweep mode. The GUI run log is always saved separately.</small></label>
+              <label class="wide">Strategy Settings<select name="settings_source"><option value="internal">Use bot’s per-symbol configurations</option><option value="manual">Manual override — same parameters for all symbols</option></select></label>
+              <div class="wide settings-note" id="settings-note">Portfolio-safe: strategy flags will be omitted so each stock uses its configuration already stored in the bot.</div>
+              <label class="strategy-param">RSI2 Period<input type="number" name="rsi2_period" value="3"></label>
+              <label class="strategy-param">RSI3 Period<input type="number" name="rsi3_period" value="3"></label>
+              <label class="strategy-param">Oversold<input type="number" step="any" name="oversold" value="22"></label>
+              <label class="strategy-param">Overbought<input type="number" step="any" name="overbought" value="85"></label>
+              <label class="strategy-param">Breakout Entry<input type="number" name="breakout_entry" value="12"></label>
+              <label class="strategy-param">Breakout Exit<input type="number" name="breakout_exit" value="4"></label>
+              <label class="strategy-param">SMA Filter<input type="number" name="sma_filter" value="200"></label>
+              <label class="strategy-param">ATR Stop<input type="number" step="any" name="atr_stop" value="6.0"></label>
+              <label class="strategy-param">ATR Profit<input type="number" step="any" name="atr_profit" value="3.0"></label>
+              <label>Start Equity ($)<input type="number" step="any" name="start_equity" value="50000"></label>
+              <label class="check wide"><input type="checkbox" name="one_trade" checked><span>One-trade mode</span></label>
+              <div class="actions wide"><button type="button" id="preview">Preview Command</button><button type="button" id="stop" disabled>Stop Run</button><button type="submit" class="primary"><span>▶</span> Run Bot</button></div>
+            </form>
+            <details class="command"><summary>Command preview</summary><code id="command">Click “Preview Command” before your first run.</code></details>
+          </section>
+
+          <section class="panel console-panel">
+            <div class="panel-title console-head"><div><h2>Live Console</h2><p>Output from your Ruby process</p></div><div class="console-controls"><label>View<select id="console-view"><option value="clean">Clean</option><option value="full">Full</option></select></label><span class="run-status idle" id="run-status">IDLE</span></div></div>
+            <pre id="console">Your bot output will appear here.</pre>
+            <div class="console-note">Keep this browser page open while the bot is running.</div>
+          </section>
+        </div>
+        <section class="panel results-panel" id="results">
+          <div class="panel-title"><div><h2>Per-Symbol Next-Open Results</h2><p>Next-open per-run trade CSV analysis merged with every symbol reported by the bot</p></div><span class="result-count" id="result-count">0 symbols</span></div>
+          <div class="table-wrap"><table><thead><tr><th>Symbol</th><th>Trades</th><th>Profit Factor</th><th>CAGR</th><th>Win Rate</th><th>Compounded Return</th></tr></thead><tbody id="results-body"><tr class="empty"><td colspan="6">Run a backtest to populate this table.</td></tr></tbody></table></div>
+        </section>
+        <section class="panel signals-panel" id="signals">
+          <div class="panel-title"><div><h2>Latest Orders</h2><p>Five newest rows read only from storage/default/vanilla/tomorrow_orders.csv</p></div><span class="result-count" id="signal-count">0 orders</span></div>
+          <div class="table-wrap"><table class="signals-table"><thead><tr><th>Symbol</th><th>Signal</th><th>Price</th><th>Signal Date</th><th>Status</th></tr></thead><tbody id="signals-body"><tr class="empty"><td colspan="5">No rows found in tomorrow_orders.csv.</td></tr></tbody></table></div>
+          <div class="signal-subtitle"><div><h3>Recent Signals</h3><p>Newest row per symbol from tomorrow_orders.csv</p></div><span class="result-count" id="recent-signal-count">0 signals</span></div>
+          <div class="table-wrap"><table class="signals-table"><thead><tr><th>Symbol</th><th>Signal</th><th>Price</th><th>Date</th></tr></thead><tbody id="recent-signals-body"><tr class="empty"><td colspan="4">No recent signal lines found in the selected run.</td></tr></tbody></table></div>
+        </section>
+        <section class="panel history-panel" id="history">
+          <div class="panel-title"><div><h2>Run History</h2><p>Saved GUI runs with their matching logs and per-run trade results</p></div><div class="history-toolbar"><button type="button" id="refresh-history">Refresh</button><button type="button" id="clear-history" class="danger-button">Clear All History</button></div></div>
+          <div class="table-wrap"><table><thead><tr><th>Name</th><th>Date</th><th>Symbols</th><th>Mode</th><th>Status</th><th></th></tr></thead><tbody id="history-body"><tr class="empty"><td colspan="6">No GUI runs saved yet.</td></tr></tbody></table></div>
+        </section>
+      </main>
+    </div>
+  </div>
+  <script src="/app.js?v=32"></script>
+</body>
+</html>

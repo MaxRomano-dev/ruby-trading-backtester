@@ -1,0 +1,11 @@
+bot_file: "trading_bot.rb"
+tiingo_downloader_file: "append_tiingo_eod_ForVXX_AndStocks.rb"
+tiingo_current_downloader_file: "append_tiingo_eod_ForVXX_AndStocks_CurrentData.rb"
+date_checker_file: "check_last_dates.rb"
+clean_mover_file: "move_clean.rb"
+tiingo_prices_dir: "data/clean-tiingo/data/prices"
+
+# Change these only if your bot uses different option names.
+modes:
+  backtest: []
+  sweep: ["--sweep"]

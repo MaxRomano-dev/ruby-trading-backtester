@@ -1,0 +1,12 @@
+{
+  "id": "36f96197ecd3a2ce",
+  "started_at": "2026-08-13T21:59:45Z",
+  "symbols": [
+    "NVDA"
+  ],
+  "mode": "backtest",
+  "status": "finished",
+  "command": "C:/Ruby31-x64/bin/ruby.exe \"C:/Users/Maxim/My Drive/Trading/Trading_Bot_Officiel/Job_Trading_Or_Software/github_trading_backtester/trading_bot.rb\" --symbols NVDA_GoogleFinance_AutoUpToDate --from 2020-01-01 --to 2026-12-29 --start-equity 50000 --one-trade",
+  "finished_at": "2026-08-13T21:59:54Z",
+  "exit_code": 0
+}

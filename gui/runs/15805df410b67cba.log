@@ -1,0 +1,1242 @@
+$ C:/Ruby31-x64/bin/ruby.exe "C:/Users/Maxim/My Drive/Trading/Trading_Bot_Officiel/Job_Trading_Or_Software/github_trading_backtester/trading_bot.rb" --symbols DELL_GoogleFinance_AutoUpToDate --from 2020-01-01 --to 2026-12-29 --start-equity 50000 --one-trade
+
+🔍 DEBUG BOOT CHECK: running from C:/Users/Maxim/My Drive/Trading/Trading_Bot_Officiel/Job_Trading_Or_Software/github_trading_backtester/lib/trading_bot/bootstrap.rb
+🔍 Current working directory: C:/Users/Maxim/My Drive/Trading/Trading_Bot_Officiel/Job_Trading_Or_Software/github_trading_backtester
+🔍 Ruby version: 3.1.4
+🔍 Timestamp: 2026-08-15 02:28:51 UTC
+[BOOT] FCXVolPolicy loaded? YES
+[FCX_VOL] loaded=yes
+[EARLY ENV] SMA=, OS=, OB=, STOP=, PROF=, BE=, BX=
+[DEBUG PARAMS] SMA=, OS=, OB=, STOP=, PROF=, BE=, BX=
+C:/Users/Maxim/My Drive/Trading/Trading_Bot_Officiel/Job_Trading_Or_Software/github_trading_backtester/lib/trading_bot/bootstrap.rb:203: warning: already initialized constant BASE_DIR
+C:/Users/Maxim/My Drive/Trading/Trading_Bot_Officiel/Job_Trading_Or_Software/github_trading_backtester/lib/trading_bot/bootstrap.rb:118: warning: previous definition of BASE_DIR was here
+[CONFIG] Start equity = $50000.0
+C:/Users/Maxim/My Drive/Trading/Trading_Bot_Officiel/Job_Trading_Or_Software/github_trading_backtester/lib/trading_bot/runner.rb:35: warning: already initialized constant RESULTS_DIR
+C:/Users/Maxim/My Drive/Trading/Trading_Bot_Officiel/Job_Trading_Or_Software/github_trading_backtester/lib/trading_bot/bootstrap.rb:240: warning: previous definition of RESULTS_DIR was here
+C:/Users/Maxim/My Drive/Trading/Trading_Bot_Officiel/Job_Trading_Or_Software/github_trading_backtester/lib/trading_bot/runner.rb:39: warning: already initialized constant SWEEP_LIVE
+C:/Users/Maxim/My Drive/Trading/Trading_Bot_Officiel/Job_Trading_Or_Software/github_trading_backtester/lib/trading_bot/bootstrap.rb:246: warning: previous definition of SWEEP_LIVE was here
+C:/Users/Maxim/My Drive/Trading/Trading_Bot_Officiel/Job_Trading_Or_Software/github_trading_backtester/lib/trading_bot/runner.rb:40: warning: already initialized constant SWEEP_BEST
+C:/Users/Maxim/My Drive/Trading/Trading_Bot_Officiel/Job_Trading_Or_Software/github_trading_backtester/lib/trading_bot/bootstrap.rb:247: warning: previous definition of SWEEP_BEST was here
+[STORAGE] profile=default bot=vanilla
+[STORAGE] RESULTS_DIR → C:/Users/Maxim/My Drive/Trading/Trading_Bot_Officiel/Job_Trading_Or_Software/github_trading_backtester/storage/default/vanilla
+[STORAGE] METRICS_CSV → C:/Users/Maxim/My Drive/Trading/Trading_Bot_Officiel/Job_Trading_Or_Software/github_trading_backtester/storage/default/vanilla/metrics/latest.csv
+=== ACTIVE CONFIGURATION ===
+ATR Stop Multiplier   = 6.0
+ATR Profit Multiplier = 3.0
+SMA Filter Length     = 200
+RSI2 Period           = 2, Oversold=20, Overbought=88
+RSI3 Period           = 3, Oversold=20, Overbought=88
+Breakout Entry Window = 36, Exit Window=40
+============================
+
+🟢 MODE: ONE-TRADE (Strict Sequential)
+-------------------------------------------------------------
+[BOT_METRICS] 🩵 fallback metrics written for tuner
+[RUNNING] DELL_GoogleFinance_AutoUpToDate with Hybrid v3 Strategy...
+[REGIME] Benchmark VXX_GoogleFinance_AutoUpToDate missing; regime filter will be OFF
+[VIXY FAST PANIC] 2019-03-06T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2019-03-07T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2019-03-07T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2019-03-08T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2019-03-08T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2019-03-22T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2019-03-22T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2019-03-25T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2019-03-25T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2019-03-26T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2019-03-26T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2019-03-27T00:00:00Z | Blocked for 15 days
+[VIXY PANIC] 2019-03-28T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2019-04-25T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2019-04-30T00:00:00Z | Blocked for 15 days
+[VIXY PANIC] 2019-05-01T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2019-05-01T00:00:00Z | Blocked for 12 days
+[VIXY FAST PANIC] 2019-05-02T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2019-05-06T00:00:00Z | Blocked for 15 days
+[VIXY PANIC] 2019-05-07T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2019-05-07T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2019-05-08T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2019-05-08T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2019-05-09T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2019-05-09T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2019-05-10T00:00:00Z | Blocked for 15 days
+[VIXY PANIC] 2019-05-13T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2019-05-13T00:00:00Z | Blocked for 12 days
+[VIXY FAST PANIC] 2019-05-15T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2019-05-23T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2019-05-24T00:00:00Z | Blocked for 12 days
+[VIXY FAST PANIC] 2019-05-28T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2019-05-29T00:00:00Z | Blocked for 15 days
+[VIXY PANIC] 2019-05-30T00:00:00Z | Blocked for 15 days
+[VIXY PANIC] 2019-05-31T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2019-05-31T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2019-06-03T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2019-06-25T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2019-06-26T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2019-07-09T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2019-07-19T00:00:00Z | Blocked for 15 days
+[VIXY PANIC] 2019-07-31T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2019-07-31T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2019-08-01T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2019-08-01T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2019-08-02T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2019-08-02T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2019-08-05T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2019-08-05T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2019-08-06T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2019-08-06T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2019-08-07T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2019-08-07T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2019-08-09T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2019-08-12T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2019-08-14T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2019-08-14T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2019-08-15T00:00:00Z | Blocked for 15 days
+[VIXY PANIC] 2019-08-16T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2019-08-16T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2019-08-23T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2019-08-23T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2019-08-26T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2019-08-26T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2019-08-27T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2019-08-27T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2019-08-28T00:00:00Z | Blocked for 15 days
+[VIXY PANIC] 2019-08-29T00:00:00Z | Blocked for 15 days
+[VIXY PANIC] 2019-09-24T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2019-09-24T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2019-09-25T00:00:00Z | Blocked for 15 days
+[VIXY PANIC] 2019-09-26T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2019-09-26T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2019-09-27T00:00:00Z | Blocked for 15 days
+[VIXY PANIC] 2019-09-30T00:00:00Z | Blocked for 15 days
+[VIXY PANIC] 2019-10-01T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2019-10-01T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2019-10-02T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2019-10-02T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2019-10-03T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2019-10-03T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2019-10-08T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2019-10-08T00:00:00Z | Blocked for 12 days
+[VIXY FAST PANIC] 2019-10-09T00:00:00Z | Blocked for 12 days
+[VIXY FAST PANIC] 2019-12-02T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2019-12-03T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2019-12-03T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2019-12-04T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2019-12-04T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2019-12-05T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2019-12-11T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2019-12-30T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2019-12-30T00:00:00Z | Blocked for 12 days
+[VIXY FAST PANIC] 2020-01-07T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2020-01-24T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2020-01-24T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2020-01-27T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2020-01-27T00:00:00Z | Blocked for 12 days
+[32mBUY DELL_GoogleFinance_AutoUpToDate 2020-01-27T00:00:00Z @ 22.17734817[0m
+[VIXY PANIC] 2020-01-28T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2020-01-28T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2020-01-29T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2020-01-29T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2020-01-30T00:00:00Z | Blocked for 15 days
+[VIXY PANIC] 2020-01-31T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2020-01-31T00:00:00Z | Blocked for 12 days
+[VIXY FAST PANIC] 2020-02-03T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2020-02-20T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2020-02-20T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2020-02-21T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2020-02-21T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2020-02-24T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2020-02-24T00:00:00Z | Blocked for 12 days
+[32mBUY DELL_GoogleFinance_AutoUpToDate 2020-02-24T00:00:00Z @ 22.25104237[0m
+[VIXY PANIC] 2020-02-25T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2020-02-25T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2020-02-26T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2020-02-26T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2020-02-27T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2020-02-27T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2020-02-28T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2020-02-28T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2020-03-02T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2020-03-02T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2020-03-03T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2020-03-03T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2020-03-04T00:00:00Z | Blocked for 15 days
+[VIXY PANIC] 2020-03-05T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2020-03-05T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2020-03-06T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2020-03-06T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2020-03-09T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2020-03-09T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2020-03-10T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2020-03-10T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2020-03-11T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2020-03-11T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2020-03-12T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2020-03-12T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2020-03-13T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2020-03-13T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2020-03-16T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2020-03-16T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2020-03-17T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2020-03-17T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2020-03-18T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2020-03-18T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2020-03-19T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2020-03-19T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2020-03-20T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2020-03-20T00:00:00Z | Blocked for 12 days
+[VIXY FAST PANIC] 2020-03-27T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2020-04-02T00:00:00Z | Blocked for 15 days
+[32mBUY DELL_GoogleFinance_AutoUpToDate 2020-04-02T00:00:00Z @ 17.10626607[0m
+[VIXY FAST PANIC] 2020-04-17T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2020-04-20T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2020-04-20T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2020-04-21T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2020-04-21T00:00:00Z | Blocked for 12 days
+[32mBUY DELL_GoogleFinance_AutoUpToDate 2020-04-21T00:00:00Z @ 17.22601914[0m
+[VIXY PANIC] 2020-04-22T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2020-04-22T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2020-04-23T00:00:00Z | Blocked for 15 days
+[VIXY PANIC] 2020-04-24T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2020-05-01T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2020-05-04T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2020-05-04T00:00:00Z | Blocked for 12 days
+[32mBUY DELL_GoogleFinance_AutoUpToDate 2020-05-04T00:00:00Z @ 18.67687369[0m
+[VIXY PANIC] 2020-05-06T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2020-05-13T00:00:00Z | Blocked for 12 days
+[32mBUY DELL_GoogleFinance_AutoUpToDate 2020-05-13T00:00:00Z @ 18.89795629[0m
+[VIXY FAST PANIC] 2020-05-14T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2020-05-15T00:00:00Z | Blocked for 15 days
+[VIXY PANIC] 2020-05-18T00:00:00Z | Blocked for 15 days
+[32mBUY DELL_GoogleFinance_AutoUpToDate 2020-06-03T00:00:00Z @ 22.48133674[0m
+[VIXY FAST PANIC] 2020-06-10T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2020-06-12T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2020-06-12T00:00:00Z | Blocked for 12 days
+[32mBUY DELL_GoogleFinance_AutoUpToDate 2020-06-12T00:00:00Z @ 21.60161224[0m
+[VIXY PANIC] 2020-06-15T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2020-06-15T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2020-06-16T00:00:00Z | Blocked for 15 days
+[VIXY PANIC] 2020-06-17T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2020-06-26T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2020-07-13T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2020-07-13T00:00:00Z | Blocked for 12 days
+[32mBUY DELL_GoogleFinance_AutoUpToDate 2020-07-13T00:00:00Z @ 23.84467944[0m
+[REASON] ATR profit target hit, RSI2 extremely overbought, RSI3 extremely overbought
+[31mSELL DELL_GoogleFinance_AutoUpToDate 2020-07-20T00:00:00Z @ 28.30317851 → 18.7%[0m
+[32mBUY DELL_GoogleFinance_AutoUpToDate 2020-07-27T00:00:00Z @ 28.07749002[0m
+[32mBUY DELL_GoogleFinance_AutoUpToDate 2020-08-13T00:00:00Z @ 27.43266578[0m
+[VIXY PANIC] 2020-08-27T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2020-08-27T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2020-08-28T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2020-08-28T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2020-08-31T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2020-08-31T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2020-09-01T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2020-09-01T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2020-09-02T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2020-09-02T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2020-09-03T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2020-09-03T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2020-09-04T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2020-09-04T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2020-09-08T00:00:00Z | Blocked for 15 days
+[32mBUY DELL_GoogleFinance_AutoUpToDate 2020-09-08T00:00:00Z @ 29.54676812[0m
+[REASON] ATR profit target hit, RSI2 extremely overbought, RSI3 extremely overbought
+[31mSELL DELL_GoogleFinance_AutoUpToDate 2020-09-15T00:00:00Z @ 30.90550493 → 4.6%[0m
+[32mBUY DELL_GoogleFinance_AutoUpToDate 2020-09-21T00:00:00Z @ 30.16856293[0m
+[VIXY FAST PANIC] 2020-09-22T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2020-09-23T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2020-09-23T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2020-09-24T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2020-09-24T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2020-09-25T00:00:00Z | Blocked for 15 days
+[REASON] ATR profit target hit, RSI2 extremely overbought
+[31mSELL DELL_GoogleFinance_AutoUpToDate 2020-09-28T00:00:00Z @ 31.00222857 → 2.76%[0m
+[VIXY FAST PANIC] 2020-10-02T00:00:00Z | Blocked for 12 days
+[32mBUY DELL_GoogleFinance_AutoUpToDate 2020-10-02T00:00:00Z @ 30.93314025[0m
+[VIXY PANIC] 2020-10-19T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2020-10-19T00:00:00Z | Blocked for 12 days
+[32mBUY DELL_GoogleFinance_AutoUpToDate 2020-10-19T00:00:00Z @ 32.01091792[0m
+[VIXY PANIC] 2020-10-20T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2020-10-20T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2020-10-21T00:00:00Z | Blocked for 15 days
+[VIXY PANIC] 2020-10-27T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2020-10-27T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2020-10-28T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2020-10-28T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2020-10-29T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2020-10-29T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2020-10-30T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2020-10-30T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2020-11-02T00:00:00Z | Blocked for 15 days
+[32mBUY DELL_GoogleFinance_AutoUpToDate 2020-11-02T00:00:00Z @ 27.76889556[0m
+[REASON] ATR profit target hit, RSI2 extremely overbought, RSI3 extremely overbought
+[31mSELL DELL_GoogleFinance_AutoUpToDate 2020-11-04T00:00:00Z @ 28.66243773 → 3.22%[0m
+[VIXY PANIC] 2020-12-11T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2020-12-11T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2020-12-14T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2020-12-14T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2020-12-15T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2020-12-21T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2020-12-22T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2020-12-22T00:00:00Z | Blocked for 12 days
+[32mBUY DELL_GoogleFinance_AutoUpToDate 2020-12-29T00:00:00Z @ 32.93209542[0m
+[VIXY PANIC] 2021-01-04T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2021-01-04T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2021-01-05T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2021-01-05T00:00:00Z | Blocked for 12 days
+[VIXY FAST PANIC] 2021-01-06T00:00:00Z | Blocked for 12 days
+[32mBUY DELL_GoogleFinance_AutoUpToDate 2021-01-13T00:00:00Z @ 32.80773645[0m
+[VIXY PANIC] 2021-01-15T00:00:00Z | Blocked for 15 days
+[REASON] ATR profit target hit, RSI2 extremely overbought, RSI3 extremely overbought
+[31mSELL DELL_GoogleFinance_AutoUpToDate 2021-01-19T00:00:00Z @ 34.47967361 → 5.1%[0m
+[VIXY FAST PANIC] 2021-01-25T00:00:00Z | Blocked for 12 days
+[32mBUY DELL_GoogleFinance_AutoUpToDate 2021-01-25T00:00:00Z @ 34.85735638[0m
+[VIXY FAST PANIC] 2021-01-26T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2021-01-27T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2021-01-27T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2021-01-28T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2021-01-28T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2021-01-29T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2021-01-29T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2021-02-02T00:00:00Z | Blocked for 15 days
+[32mBUY DELL_GoogleFinance_AutoUpToDate 2021-02-11T00:00:00Z @ 36.61680539[0m
+[VIXY PANIC] 2021-02-25T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2021-02-25T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2021-02-26T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2021-02-26T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2021-03-03T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2021-03-04T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2021-03-08T00:00:00Z | Blocked for 15 days
+[32mBUY DELL_GoogleFinance_AutoUpToDate 2021-03-22T00:00:00Z @ 40.23242706[0m
+[REASON] ATR profit target hit, RSI3 extremely overbought
+[31mSELL DELL_GoogleFinance_AutoUpToDate 2021-03-26T00:00:00Z @ 40.9877926 → 1.88%[0m
+[32mBUY DELL_GoogleFinance_AutoUpToDate 2021-04-14T00:00:00Z @ 42.69657685[0m
+[REASON] ATR profit target hit, RSI2 extremely overbought, RSI3 extremely overbought
+[31mSELL DELL_GoogleFinance_AutoUpToDate 2021-04-19T00:00:00Z @ 47.63408822 → 11.56%[0m
+[VIXY PANIC] 2021-04-20T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2021-04-20T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2021-04-22T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2021-04-22T00:00:00Z | Blocked for 12 days
+[32mBUY DELL_GoogleFinance_AutoUpToDate 2021-04-22T00:00:00Z @ 46.28456319[0m
+[VIXY PANIC] 2021-05-04T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2021-05-04T00:00:00Z | Blocked for 12 days
+[32mBUY DELL_GoogleFinance_AutoUpToDate 2021-05-04T00:00:00Z @ 44.45602587[0m
+[REASON] ATR profit target hit, RSI2 extremely overbought, RSI3 extremely overbought
+[31mSELL DELL_GoogleFinance_AutoUpToDate 2021-05-07T00:00:00Z @ 46.54709878 → 4.7%[0m
+[VIXY PANIC] 2021-05-11T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2021-05-11T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2021-05-12T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2021-05-12T00:00:00Z | Blocked for 12 days
+[32mBUY DELL_GoogleFinance_AutoUpToDate 2021-05-12T00:00:00Z @ 43.33679521[0m
+[VIXY PANIC] 2021-05-13T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2021-05-13T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2021-05-14T00:00:00Z | Blocked for 15 days
+[VIXY PANIC] 2021-05-17T00:00:00Z | Blocked for 15 days
+[REASON] ATR profit target hit, RSI2 extremely overbought, RSI3 extremely overbought
+[31mSELL DELL_GoogleFinance_AutoUpToDate 2021-05-17T00:00:00Z @ 45.31732682 → 4.57%[0m
+[VIXY FAST PANIC] 2021-05-19T00:00:00Z | Blocked for 12 days
+[32mBUY DELL_GoogleFinance_AutoUpToDate 2021-05-19T00:00:00Z @ 44.58499072[0m
+[REASON] ATR profit target hit, RSI2 extremely overbought, RSI3 extremely overbought
+[31mSELL DELL_GoogleFinance_AutoUpToDate 2021-05-24T00:00:00Z @ 46.12335713 → 3.45%[0m
+[32mBUY DELL_GoogleFinance_AutoUpToDate 2021-05-28T00:00:00Z @ 45.43247401[0m
+[32mBUY DELL_GoogleFinance_AutoUpToDate 2021-06-14T00:00:00Z @ 47.32088787[0m
+[VIXY FAST PANIC] 2021-06-16T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2021-06-18T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2021-06-18T00:00:00Z | Blocked for 12 days
+[32mBUY DELL_GoogleFinance_AutoUpToDate 2021-06-24T00:00:00Z @ 45.63513306[0m
+[REASON] ATR profit target hit, RSI2 extremely overbought, RSI3 extremely overbought
+[31mSELL DELL_GoogleFinance_AutoUpToDate 2021-06-29T00:00:00Z @ 47.07216995 → 3.15%[0m
+[VIXY PANIC] 2021-07-08T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2021-07-08T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2021-07-16T00:00:00Z | Blocked for 15 days
+[VIXY PANIC] 2021-07-19T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2021-07-19T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2021-07-20T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2021-07-20T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2021-07-21T00:00:00Z | Blocked for 15 days
+[VIXY PANIC] 2021-07-22T00:00:00Z | Blocked for 15 days
+[32mBUY DELL_GoogleFinance_AutoUpToDate 2021-07-28T00:00:00Z @ 44.16585496[0m
+[VIXY PANIC] 2021-08-02T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2021-08-02T00:00:00Z | Blocked for 12 days
+[32mBUY DELL_GoogleFinance_AutoUpToDate 2021-08-16T00:00:00Z @ 45.89766865[0m
+[VIXY FAST PANIC] 2021-08-17T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2021-08-18T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2021-08-18T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2021-08-19T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2021-08-19T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2021-08-20T00:00:00Z | Blocked for 15 days
+[32mBUY DELL_GoogleFinance_AutoUpToDate 2021-09-08T00:00:00Z @ 43.70526621[0m
+[VIXY PANIC] 2021-09-09T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2021-09-09T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2021-09-10T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2021-09-10T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2021-09-13T00:00:00Z | Blocked for 15 days
+[VIXY PANIC] 2021-09-14T00:00:00Z | Blocked for 15 days
+[VIXY PANIC] 2021-09-21T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2021-09-21T00:00:00Z | Blocked for 12 days
+[32mBUY DELL_GoogleFinance_AutoUpToDate 2021-09-21T00:00:00Z @ 45.75488613[0m
+[VIXY PANIC] 2021-09-22T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2021-09-28T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2021-09-29T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2021-09-29T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2021-09-30T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2021-09-30T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2021-10-04T00:00:00Z | Blocked for 15 days
+[32mBUY DELL_GoogleFinance_AutoUpToDate 2021-10-12T00:00:00Z @ 47.78608251[0m
+[REASON] ATR profit target hit, RSI2 extremely overbought, RSI3 extremely overbought
+[31mSELL DELL_GoogleFinance_AutoUpToDate 2021-10-21T00:00:00Z @ 52.03731664 → 8.9%[0m
+[32mBUY DELL_GoogleFinance_AutoUpToDate 2021-10-27T00:00:00Z @ 49.9232143[0m
+[REASON] ATR profit target hit, RSI2 extremely overbought, RSI3 extremely overbought
+[31mSELL DELL_GoogleFinance_AutoUpToDate 2021-11-01T00:00:00Z @ 51.36025119 → 2.88%[0m
+[VIXY FAST PANIC] 2021-11-08T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2021-11-09T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2021-11-09T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2021-11-10T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2021-11-10T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2021-11-11T00:00:00Z | Blocked for 15 days
+[32mBUY DELL_GoogleFinance_AutoUpToDate 2021-11-18T00:00:00Z @ 50.79865533[0m
+[VIXY PANIC] 2021-11-19T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2021-11-19T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2021-11-22T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2021-11-22T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2021-11-23T00:00:00Z | Blocked for 15 days
+[VIXY PANIC] 2021-11-26T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2021-11-26T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2021-11-30T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2021-11-30T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2021-12-01T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2021-12-01T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2021-12-02T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2021-12-02T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2021-12-03T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2021-12-03T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2021-12-06T00:00:00Z | Blocked for 15 days
+[32mBUY DELL_GoogleFinance_AutoUpToDate 2021-12-09T00:00:00Z @ 52.38895312[0m
+[VIXY PANIC] 2021-12-17T00:00:00Z | Blocked for 15 days
+[VIXY PANIC] 2021-12-20T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2021-12-20T00:00:00Z | Blocked for 12 days
+[32mBUY DELL_GoogleFinance_AutoUpToDate 2021-12-31T00:00:00Z @ 51.04401556[0m
+[VIXY PANIC] 2022-01-05T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2022-01-05T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2022-01-06T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2022-01-06T00:00:00Z | Blocked for 12 days
+[VIXY FAST PANIC] 2022-01-07T00:00:00Z | Blocked for 12 days
+[VIXY FAST PANIC] 2022-01-14T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2022-01-18T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2022-01-18T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2022-01-19T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2022-01-19T00:00:00Z | Blocked for 12 days
+[32mBUY DELL_GoogleFinance_AutoUpToDate 2022-01-19T00:00:00Z @ 52.67066302[0m
+[VIXY PANIC] 2022-01-20T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2022-01-20T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2022-01-21T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2022-01-21T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2022-01-24T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2022-01-24T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2022-01-25T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2022-01-25T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2022-01-27T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2022-01-27T00:00:00Z | Blocked for 12 days
+[VIXY FAST PANIC] 2022-02-04T00:00:00Z | Blocked for 12 days
+[VIXY FAST PANIC] 2022-02-07T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2022-02-11T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2022-02-11T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2022-02-14T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2022-02-14T00:00:00Z | Blocked for 12 days
+[32mBUY DELL_GoogleFinance_AutoUpToDate 2022-02-14T00:00:00Z @ 53.25225764[0m
+[VIXY PANIC] 2022-02-15T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2022-02-15T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2022-02-16T00:00:00Z | Blocked for 15 days
+[VIXY PANIC] 2022-02-17T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2022-02-18T00:00:00Z | Blocked for 12 days
+[VIXY FAST PANIC] 2022-02-22T00:00:00Z | Blocked for 12 days
+[32mBUY DELL_GoogleFinance_AutoUpToDate 2022-02-22T00:00:00Z @ 51.91640749[0m
+[VIXY PANIC] 2022-02-23T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2022-02-23T00:00:00Z | Blocked for 12 days
+[32mBUY DELL_GoogleFinance_AutoUpToDate 2022-02-23T00:00:00Z @ 51.59834793[0m
+[VIXY PANIC] 2022-02-24T00:00:00Z | Blocked for 15 days
+[32mBUY DELL_GoogleFinance_AutoUpToDate 2022-02-24T00:00:00Z @ 50.74413083[0m
+[VIXY PANIC] 2022-03-01T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2022-03-01T00:00:00Z | Blocked for 12 days
+[VIXY FAST PANIC] 2022-03-02T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2022-03-03T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2022-03-03T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2022-03-04T00:00:00Z | Blocked for 15 days
+[VIXY PANIC] 2022-03-07T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2022-03-07T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2022-03-08T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2022-03-08T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2022-03-09T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2022-03-09T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2022-03-10T00:00:00Z | Blocked for 15 days
+[32mBUY DELL_GoogleFinance_AutoUpToDate 2022-03-14T00:00:00Z @ 46.10954868[0m
+[32mBUY DELL_GoogleFinance_AutoUpToDate 2022-03-31T00:00:00Z @ 45.6097408[0m
+[VIXY PANIC] 2022-04-05T00:00:00Z | Blocked for 15 days
+[VIXY PANIC] 2022-04-06T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2022-04-06T00:00:00Z | Blocked for 12 days
+[VIXY FAST PANIC] 2022-04-07T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2022-04-11T00:00:00Z | Blocked for 15 days
+[VIXY PANIC] 2022-04-12T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2022-04-12T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2022-04-22T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2022-04-22T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2022-04-25T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2022-04-25T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2022-04-26T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2022-04-26T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2022-04-27T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2022-04-27T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2022-04-28T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2022-04-28T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2022-04-29T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2022-04-29T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2022-05-02T00:00:00Z | Blocked for 15 days
+[VIXY PANIC] 2022-05-05T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2022-05-06T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2022-05-09T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2022-05-09T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2022-05-10T00:00:00Z | Blocked for 15 days
+[VIXY PANIC] 2022-05-11T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2022-05-11T00:00:00Z | Blocked for 12 days
+[VIXY FAST PANIC] 2022-05-18T00:00:00Z | Blocked for 12 days
+[VIXY FAST PANIC] 2022-05-19T00:00:00Z | Blocked for 12 days
+[VIXY FAST PANIC] 2022-05-20T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2022-05-23T00:00:00Z | Blocked for 15 days
+[VIXY PANIC] 2022-05-24T00:00:00Z | Blocked for 15 days
+[VIXY PANIC] 2022-06-10T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2022-06-10T00:00:00Z | Blocked for 12 days
+[32mBUY DELL_GoogleFinance_AutoUpToDate 2022-06-10T00:00:00Z @ 44.9809329[0m
+[VIXY PANIC] 2022-06-13T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2022-06-13T00:00:00Z | Blocked for 12 days
+[32mBUY DELL_GoogleFinance_AutoUpToDate 2022-06-13T00:00:00Z @ 43.23330105[0m
+[VIXY PANIC] 2022-06-14T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2022-06-14T00:00:00Z | Blocked for 12 days
+[32mBUY DELL_GoogleFinance_AutoUpToDate 2022-06-14T00:00:00Z @ 43.3248001[0m
+[VIXY PANIC] 2022-06-15T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2022-06-15T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2022-06-16T00:00:00Z | Blocked for 15 days
+[VIXY PANIC] 2022-06-17T00:00:00Z | Blocked for 15 days
+[32mBUY DELL_GoogleFinance_AutoUpToDate 2022-06-29T00:00:00Z @ 43.36139972[0m
+[VIXY FAST PANIC] 2022-06-30T00:00:00Z | Blocked for 12 days
+[32mBUY DELL_GoogleFinance_AutoUpToDate 2022-06-30T00:00:00Z @ 42.28171093[0m
+[32mBUY DELL_GoogleFinance_AutoUpToDate 2022-07-01T00:00:00Z @ 39.1066939[0m
+[32mBUY DELL_GoogleFinance_AutoUpToDate 2022-07-05T00:00:00Z @ 39.4726901[0m
+[VIXY FAST PANIC] 2022-08-02T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2022-08-22T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2022-08-22T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2022-08-23T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2022-08-23T00:00:00Z | Blocked for 12 days
+[32mBUY DELL_GoogleFinance_AutoUpToDate 2022-08-23T00:00:00Z @ 43.27148382[0m
+[VIXY PANIC] 2022-08-24T00:00:00Z | Blocked for 15 days
+[VIXY PANIC] 2022-08-25T00:00:00Z | Blocked for 15 days
+[VIXY PANIC] 2022-08-26T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2022-08-29T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2022-08-30T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2022-08-30T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2022-08-31T00:00:00Z | Blocked for 15 days
+[VIXY PANIC] 2022-09-01T00:00:00Z | Blocked for 15 days
+[32mBUY DELL_GoogleFinance_AutoUpToDate 2022-09-02T00:00:00Z @ 34.83658657[0m
+[VIXY FAST PANIC] 2022-09-13T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2022-09-14T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2022-09-14T00:00:00Z | Blocked for 12 days
+[32mBUY DELL_GoogleFinance_AutoUpToDate 2022-09-14T00:00:00Z @ 35.15001445[0m
+[VIXY PANIC] 2022-09-15T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2022-09-15T00:00:00Z | Blocked for 12 days
+[32mBUY DELL_GoogleFinance_AutoUpToDate 2022-09-15T00:00:00Z @ 34.70752803[0m
+[VIXY PANIC] 2022-09-16T00:00:00Z | Blocked for 15 days
+[VIXY PANIC] 2022-09-19T00:00:00Z | Blocked for 15 days
+[VIXY PANIC] 2022-09-21T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2022-09-21T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2022-09-22T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2022-09-22T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2022-09-23T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2022-09-23T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2022-09-26T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2022-09-26T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2022-09-27T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2022-09-27T00:00:00Z | Blocked for 12 days
+[32mBUY DELL_GoogleFinance_AutoUpToDate 2022-09-27T00:00:00Z @ 32.00651722[0m
+[VIXY PANIC] 2022-09-28T00:00:00Z | Blocked for 15 days
+[VIXY PANIC] 2022-09-29T00:00:00Z | Blocked for 15 days
+[VIXY PANIC] 2022-09-30T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2022-10-07T00:00:00Z | Blocked for 12 days
+[32mBUY DELL_GoogleFinance_AutoUpToDate 2022-10-07T00:00:00Z @ 31.89589562[0m
+[VIXY PANIC] 2022-10-10T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2022-10-10T00:00:00Z | Blocked for 12 days
+[32mBUY DELL_GoogleFinance_AutoUpToDate 2022-10-10T00:00:00Z @ 31.78527401[0m
+[VIXY PANIC] 2022-10-11T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2022-10-11T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2022-10-12T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2022-10-12T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2022-10-13T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2022-11-09T00:00:00Z | Blocked for 12 days
+[32mBUY DELL_GoogleFinance_AutoUpToDate 2022-11-16T00:00:00Z @ 38.32412787[0m
+[32mBUY DELL_GoogleFinance_AutoUpToDate 2022-11-29T00:00:00Z @ 40.50184664[0m
+[32mBUY DELL_GoogleFinance_AutoUpToDate 2022-12-05T00:00:00Z @ 40.08305457[0m
+[32mBUY DELL_GoogleFinance_AutoUpToDate 2022-12-06T00:00:00Z @ 39.52466514[0m
+[VIXY FAST PANIC] 2022-12-07T00:00:00Z | Blocked for 12 days
+[32mBUY DELL_GoogleFinance_AutoUpToDate 2022-12-07T00:00:00Z @ 39.01280816[0m
+[VIXY PANIC] 2022-12-09T00:00:00Z | Blocked for 15 days
+[VIXY PANIC] 2022-12-12T00:00:00Z | Blocked for 15 days
+[32mBUY DELL_GoogleFinance_AutoUpToDate 2022-12-15T00:00:00Z @ 36.64895958[0m
+[VIXY FAST PANIC] 2022-12-16T00:00:00Z | Blocked for 12 days
+[32mBUY DELL_GoogleFinance_AutoUpToDate 2022-12-16T00:00:00Z @ 36.5279752[0m
+[VIXY FAST PANIC] 2022-12-19T00:00:00Z | Blocked for 12 days
+[32mBUY DELL_GoogleFinance_AutoUpToDate 2022-12-19T00:00:00Z @ 36.29531294[0m
+[32mBUY DELL_GoogleFinance_AutoUpToDate 2022-12-20T00:00:00Z @ 36.24878049[0m
+[32mBUY DELL_GoogleFinance_AutoUpToDate 2023-01-11T00:00:00Z @ 37.94256176[0m
+[32mBUY DELL_GoogleFinance_AutoUpToDate 2023-01-12T00:00:00Z @ 37.16081656[0m
+[VIXY FAST PANIC] 2023-01-19T00:00:00Z | Blocked for 12 days
+[32mBUY DELL_GoogleFinance_AutoUpToDate 2023-01-19T00:00:00Z @ 36.7234115[0m
+[VIXY FAST PANIC] 2023-02-06T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2023-02-08T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2023-02-08T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2023-02-09T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2023-02-09T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2023-02-10T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2023-02-10T00:00:00Z | Blocked for 12 days
+[32mBUY DELL_GoogleFinance_AutoUpToDate 2023-02-16T00:00:00Z @ 40.08055771[0m
+[VIXY FAST PANIC] 2023-02-17T00:00:00Z | Blocked for 12 days
+[32mBUY DELL_GoogleFinance_AutoUpToDate 2023-02-17T00:00:00Z @ 39.85538604[0m
+[VIXY PANIC] 2023-02-21T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2023-02-21T00:00:00Z | Blocked for 12 days
+[32mBUY DELL_GoogleFinance_AutoUpToDate 2023-02-21T00:00:00Z @ 39.30183901[0m
+[VIXY PANIC] 2023-02-22T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2023-02-22T00:00:00Z | Blocked for 12 days
+[32mBUY DELL_GoogleFinance_AutoUpToDate 2023-02-22T00:00:00Z @ 39.22678178[0m
+[VIXY PANIC] 2023-02-23T00:00:00Z | Blocked for 15 days
+[VIXY PANIC] 2023-02-24T00:00:00Z | Blocked for 15 days
+[32mBUY DELL_GoogleFinance_AutoUpToDate 2023-02-27T00:00:00Z @ 38.46682739[0m
+[32mBUY DELL_GoogleFinance_AutoUpToDate 2023-02-28T00:00:00Z @ 38.12906988[0m
+[32mBUY DELL_GoogleFinance_AutoUpToDate 2023-03-01T00:00:00Z @ 37.94142682[0m
+[32mBUY DELL_GoogleFinance_AutoUpToDate 2023-03-02T00:00:00Z @ 37.68810869[0m
+[32mBUY DELL_GoogleFinance_AutoUpToDate 2023-03-03T00:00:00Z @ 37.33158687[0m
+[VIXY PANIC] 2023-03-09T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2023-03-09T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2023-03-10T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2023-03-10T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2023-03-13T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2023-03-13T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2023-03-14T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2023-03-14T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2023-03-15T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2023-03-15T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2023-03-16T00:00:00Z | Blocked for 15 days
+[VIXY PANIC] 2023-03-17T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2023-03-17T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2023-03-23T00:00:00Z | Blocked for 15 days
+[32mBUY DELL_GoogleFinance_AutoUpToDate 2023-03-24T00:00:00Z @ 35.070488[0m
+[32mBUY DELL_GoogleFinance_AutoUpToDate 2023-04-06T00:00:00Z @ 37.74440161[0m
+[32mBUY DELL_GoogleFinance_AutoUpToDate 2023-04-21T00:00:00Z @ 40.44646168[0m
+[VIXY PANIC] 2023-04-25T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2023-04-25T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2023-04-26T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2023-04-26T00:00:00Z | Blocked for 12 days
+[REASON] ATR profit target hit, RSI2 extremely overbought, RSI3 extremely overbought
+[31mSELL DELL_GoogleFinance_AutoUpToDate 2023-04-28T00:00:00Z @ 41.15671132 → 1.76%[0m
+[VIXY FAST PANIC] 2023-05-03T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2023-05-04T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2023-05-04T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2023-05-05T00:00:00Z | Blocked for 15 days
+[32mBUY DELL_GoogleFinance_AutoUpToDate 2023-05-11T00:00:00Z @ 42.30179343[0m
+[REASON] ATR profit target hit, RSI2 extremely overbought, RSI3 extremely overbought
+[31mSELL DELL_GoogleFinance_AutoUpToDate 2023-05-16T00:00:00Z @ 42.94531064 → 1.52%[0m
+[VIXY FAST PANIC] 2023-05-23T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2023-05-24T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2023-05-24T00:00:00Z | Blocked for 12 days
+[32mBUY DELL_GoogleFinance_AutoUpToDate 2023-05-24T00:00:00Z @ 43.44687553[0m
+[VIXY PANIC] 2023-05-25T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2023-05-25T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2023-07-06T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2023-07-06T00:00:00Z | Blocked for 12 days
+[VIXY FAST PANIC] 2023-07-07T00:00:00Z | Blocked for 12 days
+[32mBUY DELL_GoogleFinance_AutoUpToDate 2023-07-07T00:00:00Z @ 50.65805374[0m
+[VIXY PANIC] 2023-07-10T00:00:00Z | Blocked for 15 days
+[VIXY PANIC] 2023-07-11T00:00:00Z | Blocked for 15 days
+[32mBUY DELL_GoogleFinance_AutoUpToDate 2023-07-18T00:00:00Z @ 50.94195839[0m
+[REASON] ATR profit target hit, RSI2 extremely overbought, RSI3 extremely overbought
+[31mSELL DELL_GoogleFinance_AutoUpToDate 2023-07-25T00:00:00Z @ 51.80730661 → 1.7%[0m
+[32mBUY DELL_GoogleFinance_AutoUpToDate 2023-07-28T00:00:00Z @ 50.13026303[0m
+[VIXY PANIC] 2023-08-02T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2023-08-02T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2023-08-03T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2023-08-03T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2023-08-04T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2023-08-04T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2023-08-08T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2023-08-16T00:00:00Z | Blocked for 12 days
+[32mBUY DELL_GoogleFinance_AutoUpToDate 2023-08-16T00:00:00Z @ 52.61724243[0m
+[VIXY PANIC] 2023-08-17T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2023-08-17T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2023-08-18T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2023-08-18T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2023-08-21T00:00:00Z | Blocked for 15 days
+[VIXY PANIC] 2023-09-20T00:00:00Z | Blocked for 15 days
+[VIXY PANIC] 2023-09-21T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2023-09-21T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2023-09-22T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2023-09-22T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2023-09-25T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2023-09-25T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2023-09-26T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2023-09-26T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2023-09-27T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2023-09-27T00:00:00Z | Blocked for 12 days
+[32mBUY DELL_GoogleFinance_AutoUpToDate 2023-09-27T00:00:00Z @ 64.74722245[0m
+[VIXY FAST PANIC] 2023-10-03T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2023-10-05T00:00:00Z | Blocked for 15 days
+[32mBUY DELL_GoogleFinance_AutoUpToDate 2023-10-05T00:00:00Z @ 63.07017886[0m
+[REASON] ATR profit target hit, RSI2 extremely overbought, RSI3 extremely overbought
+[31mSELL DELL_GoogleFinance_AutoUpToDate 2023-10-10T00:00:00Z @ 64.77580842 → 2.7%[0m
+[VIXY PANIC] 2023-10-13T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2023-10-13T00:00:00Z | Blocked for 12 days
+[VIXY FAST PANIC] 2023-10-16T00:00:00Z | Blocked for 12 days
+[32mBUY DELL_GoogleFinance_AutoUpToDate 2023-10-16T00:00:00Z @ 64.56617797[0m
+[VIXY PANIC] 2023-10-17T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2023-10-17T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2023-10-18T00:00:00Z | Blocked for 15 days
+[VIXY PANIC] 2023-10-19T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2023-10-19T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2023-10-20T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2023-10-20T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2023-10-24T00:00:00Z | Blocked for 15 days
+[VIXY PANIC] 2023-10-25T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2023-10-27T00:00:00Z | Blocked for 12 days
+[32mBUY DELL_GoogleFinance_AutoUpToDate 2023-11-16T00:00:00Z @ 69.51109139[0m
+[32mBUY DELL_GoogleFinance_AutoUpToDate 2023-11-28T00:00:00Z @ 70.93887642[0m
+[32mBUY DELL_GoogleFinance_AutoUpToDate 2023-12-06T00:00:00Z @ 64.8061085[0m
+[REASON] ATR profit target hit, RSI2 extremely overbought, RSI3 extremely overbought
+[31mSELL DELL_GoogleFinance_AutoUpToDate 2023-12-11T00:00:00Z @ 66.34888293 → 2.38%[0m
+[VIXY PANIC] 2023-12-19T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2023-12-19T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2023-12-20T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2023-12-20T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2023-12-21T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2023-12-21T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2023-12-22T00:00:00Z | Blocked for 15 days
+[32mBUY DELL_GoogleFinance_AutoUpToDate 2024-01-02T00:00:00Z @ 71.66714261[0m
+[VIXY FAST PANIC] 2024-01-03T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2024-01-04T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2024-01-04T00:00:00Z | Blocked for 12 days
+[VIXY FAST PANIC] 2024-01-16T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2024-01-17T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2024-01-17T00:00:00Z | Blocked for 12 days
+[32mBUY DELL_GoogleFinance_AutoUpToDate 2024-01-17T00:00:00Z @ 74.41730572[0m
+[VIXY PANIC] 2024-01-18T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2024-01-18T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2024-01-31T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2024-01-31T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2024-02-02T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2024-02-02T00:00:00Z | Blocked for 12 days
+[32mBUY DELL_GoogleFinance_AutoUpToDate 2024-02-06T00:00:00Z @ 79.58897541[0m
+[REASON] ATR profit target hit, RSI2 extremely overbought, RSI3 extremely overbought
+[31mSELL DELL_GoogleFinance_AutoUpToDate 2024-02-09T00:00:00Z @ 82.97737882 → 4.26%[0m
+[VIXY PANIC] 2024-02-13T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2024-02-13T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2024-02-14T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2024-02-14T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2024-02-15T00:00:00Z | Blocked for 15 days
+[VIXY PANIC] 2024-02-20T00:00:00Z | Blocked for 15 days
+[VIXY PANIC] 2024-03-05T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2024-03-05T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2024-03-06T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2024-03-06T00:00:00Z | Blocked for 12 days
+[32mBUY DELL_GoogleFinance_AutoUpToDate 2024-03-06T00:00:00Z @ 114.0698305[0m
+[VIXY PANIC] 2024-03-07T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2024-03-07T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2024-03-08T00:00:00Z | Blocked for 15 days
+[VIXY PANIC] 2024-03-11T00:00:00Z | Blocked for 15 days
+[32mBUY DELL_GoogleFinance_AutoUpToDate 2024-03-14T00:00:00Z @ 102.4703245[0m
+[VIXY FAST PANIC] 2024-03-15T00:00:00Z | Blocked for 12 days
+[REASON] ATR profit target hit, RSI2 extremely overbought, RSI3 extremely overbought
+[31mSELL DELL_GoogleFinance_AutoUpToDate 2024-03-20T00:00:00Z @ 106.917604 → 4.34%[0m
+[VIXY PANIC] 2024-04-02T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2024-04-02T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2024-04-03T00:00:00Z | Blocked for 15 days
+[VIXY PANIC] 2024-04-04T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2024-04-04T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2024-04-05T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2024-04-05T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2024-04-08T00:00:00Z | Blocked for 15 days
+[VIXY PANIC] 2024-04-10T00:00:00Z | Blocked for 15 days
+[32mBUY DELL_GoogleFinance_AutoUpToDate 2024-04-10T00:00:00Z @ 118.7577636[0m
+[VIXY PANIC] 2024-04-12T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2024-04-12T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2024-04-15T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2024-04-15T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2024-04-16T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2024-04-16T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2024-04-18T00:00:00Z | Blocked for 15 days
+[VIXY PANIC] 2024-04-19T00:00:00Z | Blocked for 15 days
+[32mBUY DELL_GoogleFinance_AutoUpToDate 2024-04-19T00:00:00Z @ 110.5755395[0m
+[REASON] ATR profit target hit, RSI2 extremely overbought, RSI3 extremely overbought
+[31mSELL DELL_GoogleFinance_AutoUpToDate 2024-04-24T00:00:00Z @ 116.1519157 → 5.04%[0m
+[VIXY PANIC] 2024-05-29T00:00:00Z | Blocked for 15 days
+[VIXY PANIC] 2024-05-30T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2024-05-30T00:00:00Z | Blocked for 12 days
+[32mBUY DELL_GoogleFinance_AutoUpToDate 2024-06-03T00:00:00Z @ 127.5835061[0m
+[VIXY PANIC] 2024-06-20T00:00:00Z | Blocked for 15 days
+[VIXY PANIC] 2024-06-21T00:00:00Z | Blocked for 15 days
+[32mBUY DELL_GoogleFinance_AutoUpToDate 2024-06-24T00:00:00Z @ 132.9272673[0m
+[32mBUY DELL_GoogleFinance_AutoUpToDate 2024-07-11T00:00:00Z @ 135.9808451[0m
+[VIXY PANIC] 2024-07-17T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2024-07-17T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2024-07-19T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2024-07-19T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2024-07-22T00:00:00Z | Blocked for 15 days
+[VIXY PANIC] 2024-07-23T00:00:00Z | Blocked for 15 days
+[VIXY PANIC] 2024-07-24T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2024-07-24T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2024-07-25T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2024-07-25T00:00:00Z | Blocked for 12 days
+[VIXY FAST PANIC] 2024-07-26T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2024-07-29T00:00:00Z | Blocked for 15 days
+[VIXY PANIC] 2024-07-30T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2024-08-01T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2024-08-02T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2024-08-02T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2024-08-05T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2024-08-05T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2024-08-06T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2024-08-06T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2024-08-07T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2024-08-07T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2024-08-08T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2024-08-21T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2024-08-22T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2024-08-22T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2024-08-26T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2024-08-28T00:00:00Z | Blocked for 12 days
+[32mBUY DELL_GoogleFinance_AutoUpToDate 2024-08-29T00:00:00Z @ 107.3888931[0m
+[VIXY PANIC] 2024-09-03T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2024-09-03T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2024-09-04T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2024-09-04T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2024-09-06T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2024-09-06T00:00:00Z | Blocked for 12 days
+[32mBUY DELL_GoogleFinance_AutoUpToDate 2024-09-06T00:00:00Z @ 98.91337456[0m
+[VIXY PANIC] 2024-09-09T00:00:00Z | Blocked for 15 days
+[VIXY PANIC] 2024-09-27T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2024-09-27T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2024-09-30T00:00:00Z | Blocked for 15 days
+[VIXY PANIC] 2024-10-01T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2024-10-01T00:00:00Z | Blocked for 12 days
+[32mBUY DELL_GoogleFinance_AutoUpToDate 2024-10-01T00:00:00Z @ 109.7356614[0m
+[VIXY PANIC] 2024-10-02T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2024-10-02T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2024-10-03T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2024-10-03T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2024-10-04T00:00:00Z | Blocked for 15 days
+[REASON] ATR profit target hit, RSI2 extremely overbought, RSI3 extremely overbought
+[31mSELL DELL_GoogleFinance_AutoUpToDate 2024-10-04T00:00:00Z @ 116.7759663 → 6.42%[0m
+[VIXY PANIC] 2024-10-07T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2024-10-07T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2024-10-08T00:00:00Z | Blocked for 15 days
+[32mBUY DELL_GoogleFinance_AutoUpToDate 2024-10-22T00:00:00Z @ 117.1881054[0m
+[VIXY FAST PANIC] 2024-10-23T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2024-10-25T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2024-10-25T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2024-10-28T00:00:00Z | Blocked for 15 days
+[VIXY PANIC] 2024-10-31T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2024-10-31T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2024-11-04T00:00:00Z | Blocked for 15 days
+[32mBUY DELL_GoogleFinance_AutoUpToDate 2024-11-14T00:00:00Z @ 130.843829[0m
+[VIXY PANIC] 2024-11-15T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2024-11-15T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2024-11-19T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2024-11-19T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2024-11-20T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2024-11-20T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2024-11-21T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2024-11-21T00:00:00Z | Blocked for 12 days
+[32mBUY DELL_GoogleFinance_AutoUpToDate 2024-11-27T00:00:00Z @ 121.0619315[0m
+[32mBUY DELL_GoogleFinance_AutoUpToDate 2024-12-09T00:00:00Z @ 120.5071373[0m
+[VIXY PANIC] 2024-12-17T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2024-12-17T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2024-12-18T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2024-12-18T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2024-12-19T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2024-12-19T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2024-12-20T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2024-12-20T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2024-12-23T00:00:00Z | Blocked for 15 days
+[32mBUY DELL_GoogleFinance_AutoUpToDate 2024-12-27T00:00:00Z @ 114.2000034[0m
+[VIXY FAST PANIC] 2024-12-30T00:00:00Z | Blocked for 12 days
+[32mBUY DELL_GoogleFinance_AutoUpToDate 2024-12-30T00:00:00Z @ 111.7569623[0m
+[VIXY FAST PANIC] 2024-12-31T00:00:00Z | Blocked for 12 days
+[32mBUY DELL_GoogleFinance_AutoUpToDate 2024-12-31T00:00:00Z @ 112.165758[0m
+[VIXY PANIC] 2025-01-02T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2025-01-02T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2025-01-03T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2025-01-08T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2025-01-10T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2025-01-10T00:00:00Z | Blocked for 12 days
+[32mBUY DELL_GoogleFinance_AutoUpToDate 2025-01-10T00:00:00Z @ 111.7082961[0m
+[VIXY PANIC] 2025-01-13T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2025-01-13T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2025-01-14T00:00:00Z | Blocked for 15 days
+[32mBUY DELL_GoogleFinance_AutoUpToDate 2025-01-15T00:00:00Z @ 106.316086[0m
+[VIXY FAST PANIC] 2025-01-27T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2025-01-31T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2025-02-03T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2025-02-21T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2025-02-21T00:00:00Z | Blocked for 12 days
+[32mBUY DELL_GoogleFinance_AutoUpToDate 2025-02-21T00:00:00Z @ 114.9052602[0m
+[VIXY PANIC] 2025-02-24T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2025-02-24T00:00:00Z | Blocked for 12 days
+[32mBUY DELL_GoogleFinance_AutoUpToDate 2025-02-24T00:00:00Z @ 111.5245442[0m
+[VIXY PANIC] 2025-02-25T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2025-02-25T00:00:00Z | Blocked for 12 days
+[32mBUY DELL_GoogleFinance_AutoUpToDate 2025-02-25T00:00:00Z @ 108.1145156[0m
+[VIXY PANIC] 2025-02-26T00:00:00Z | Blocked for 15 days
+[VIXY PANIC] 2025-02-27T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2025-02-27T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2025-02-28T00:00:00Z | Blocked for 15 days
+[VIXY PANIC] 2025-03-03T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2025-03-03T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2025-03-04T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2025-03-04T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2025-03-05T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2025-03-05T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2025-03-06T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2025-03-06T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2025-03-07T00:00:00Z | Blocked for 15 days
+[VIXY PANIC] 2025-03-10T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2025-03-10T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2025-03-11T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2025-03-11T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2025-03-12T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2025-03-12T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2025-03-13T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2025-03-27T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2025-03-28T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2025-03-28T00:00:00Z | Blocked for 12 days
+[32mBUY DELL_GoogleFinance_AutoUpToDate 2025-03-28T00:00:00Z @ 90.17522501[0m
+[VIXY PANIC] 2025-03-31T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2025-03-31T00:00:00Z | Blocked for 12 days
+[32mBUY DELL_GoogleFinance_AutoUpToDate 2025-03-31T00:00:00Z @ 89.06134749[0m
+[VIXY PANIC] 2025-04-01T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2025-04-01T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2025-04-02T00:00:00Z | Blocked for 15 days
+[VIXY PANIC] 2025-04-03T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2025-04-03T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2025-04-04T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2025-04-04T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2025-04-07T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2025-04-07T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2025-04-08T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2025-04-08T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2025-04-09T00:00:00Z | Blocked for 15 days
+[VIXY PANIC] 2025-04-10T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2025-04-10T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2025-04-11T00:00:00Z | Blocked for 15 days
+[VIXY PANIC] 2025-04-16T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2025-04-17T00:00:00Z | Blocked for 12 days
+[VIXY FAST PANIC] 2025-04-21T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2025-04-22T00:00:00Z | Blocked for 15 days
+[32mBUY DELL_GoogleFinance_AutoUpToDate 2025-04-30T00:00:00Z @ 90.21719507[0m
+[32mBUY DELL_GoogleFinance_AutoUpToDate 2025-05-01T00:00:00Z @ 90.40400051[0m
+[VIXY FAST PANIC] 2025-05-07T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2025-05-21T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2025-05-21T00:00:00Z | Blocked for 12 days
+[32mBUY DELL_GoogleFinance_AutoUpToDate 2025-05-21T00:00:00Z @ 110.0480672[0m
+[VIXY PANIC] 2025-05-22T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2025-05-22T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2025-05-23T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2025-05-23T00:00:00Z | Blocked for 12 days
+[REASON] ATR profit target hit, RSI2 extremely overbought, RSI3 extremely overbought
+[31mSELL DELL_GoogleFinance_AutoUpToDate 2025-05-27T00:00:00Z @ 112.0734314 → 1.84%[0m
+[VIXY PANIC] 2025-05-28T00:00:00Z | Blocked for 15 days
+[32mBUY DELL_GoogleFinance_AutoUpToDate 2025-05-30T00:00:00Z @ 109.3991641[0m
+[32mBUY DELL_GoogleFinance_AutoUpToDate 2025-06-11T00:00:00Z @ 109.3696685[0m
+[VIXY PANIC] 2025-06-13T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2025-06-13T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2025-06-17T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2025-06-17T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2025-06-18T00:00:00Z | Blocked for 15 days
+[VIXY PANIC] 2025-06-20T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2025-06-20T00:00:00Z | Blocked for 12 days
+[32mBUY DELL_GoogleFinance_AutoUpToDate 2025-07-01T00:00:00Z @ 119.6832951[0m
+[32mBUY DELL_GoogleFinance_AutoUpToDate 2025-07-15T00:00:00Z @ 123.5767137[0m
+[VIXY FAST PANIC] 2025-07-31T00:00:00Z | Blocked for 12 days
+[32mBUY DELL_GoogleFinance_AutoUpToDate 2025-07-31T00:00:00Z @ 131.0098999[0m
+[VIXY PANIC] 2025-08-01T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2025-08-01T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2025-08-04T00:00:00Z | Blocked for 15 days
+[VIXY PANIC] 2025-08-05T00:00:00Z | Blocked for 15 days
+[32mBUY DELL_GoogleFinance_AutoUpToDate 2025-08-15T00:00:00Z @ 136.5291202[0m
+[VIXY PANIC] 2025-09-02T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2025-09-02T00:00:00Z | Blocked for 12 days
+[32mBUY DELL_GoogleFinance_AutoUpToDate 2025-09-09T00:00:00Z @ 119.7542449[0m
+[REASON] ATR profit target hit, RSI2 extremely overbought
+[31mSELL DELL_GoogleFinance_AutoUpToDate 2025-09-16T00:00:00Z @ 126.0633358 → 5.27%[0m
+[VIXY FAST PANIC] 2025-09-23T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2025-09-25T00:00:00Z | Blocked for 15 days
+[32mBUY DELL_GoogleFinance_AutoUpToDate 2025-09-25T00:00:00Z @ 129.3018049[0m
+[VIXY PANIC] 2025-10-10T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2025-10-10T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2025-10-13T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2025-10-13T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2025-10-14T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2025-10-14T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2025-10-15T00:00:00Z | Blocked for 15 days
+[VIXY PANIC] 2025-10-16T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2025-10-16T00:00:00Z | Blocked for 12 days
+[32mBUY DELL_GoogleFinance_AutoUpToDate 2025-10-20T00:00:00Z @ 145.9976931[0m
+[REASON] ATR profit target hit, RSI2 extremely overbought, RSI3 extremely overbought
+[31mSELL DELL_GoogleFinance_AutoUpToDate 2025-10-23T00:00:00Z @ 152.8121669 → 4.67%[0m
+[VIXY FAST PANIC] 2025-10-30T00:00:00Z | Blocked for 12 days
+[VIXY FAST PANIC] 2025-10-31T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2025-11-03T00:00:00Z | Blocked for 15 days
+[VIXY PANIC] 2025-11-04T00:00:00Z | Blocked for 15 days
+[32mBUY DELL_GoogleFinance_AutoUpToDate 2025-11-04T00:00:00Z @ 153.2183978[0m
+[VIXY PANIC] 2025-11-06T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2025-11-06T00:00:00Z | Blocked for 12 days
+[VIXY FAST PANIC] 2025-11-13T00:00:00Z | Blocked for 12 days
+[VIXY FAST PANIC] 2025-11-14T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2025-11-17T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2025-11-17T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2025-11-18T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2025-11-18T00:00:00Z | Blocked for 12 days
+[32mBUY DELL_GoogleFinance_AutoUpToDate 2025-11-18T00:00:00Z @ 121.5621134[0m
+[VIXY PANIC] 2025-11-19T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2025-11-19T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2025-11-20T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2025-11-20T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2025-11-21T00:00:00Z | Blocked for 15 days
+[32mBUY DELL_GoogleFinance_AutoUpToDate 2025-12-12T00:00:00Z @ 128.7850966[0m
+[32mBUY DELL_GoogleFinance_AutoUpToDate 2025-12-31T00:00:00Z @ 124.7227878[0m
+[32mBUY DELL_GoogleFinance_AutoUpToDate 2026-01-08T00:00:00Z @ 117.410632[0m
+[VIXY FAST PANIC] 2026-01-14T00:00:00Z | Blocked for 12 days
+[32mBUY DELL_GoogleFinance_AutoUpToDate 2026-01-14T00:00:00Z @ 117.5988854[0m
+[VIXY PANIC] 2026-01-20T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2026-01-20T00:00:00Z | Blocked for 12 days
+[VIXY FAST PANIC] 2026-01-27T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2026-01-29T00:00:00Z | Blocked for 15 days
+[VIXY PANIC] 2026-01-30T00:00:00Z | Blocked for 15 days
+[VIXY PANIC] 2026-02-05T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2026-02-05T00:00:00Z | Blocked for 12 days
+[VIXY FAST PANIC] 2026-02-12T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2026-02-13T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2026-02-13T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2026-02-17T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2026-02-17T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2026-02-18T00:00:00Z | Blocked for 15 days
+[VIXY PANIC] 2026-02-19T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2026-02-23T00:00:00Z | Blocked for 12 days
+[VIXY FAST PANIC] 2026-03-02T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2026-03-03T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2026-03-03T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2026-03-04T00:00:00Z | Blocked for 15 days
+[VIXY PANIC] 2026-03-05T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2026-03-05T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2026-03-06T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2026-03-06T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2026-03-09T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2026-03-09T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2026-03-10T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2026-03-10T00:00:00Z | Blocked for 12 days
+[32mBUY DELL_GoogleFinance_AutoUpToDate 2026-03-10T00:00:00Z @ 143.1515076[0m
+[VIXY PANIC] 2026-03-11T00:00:00Z | Blocked for 15 days
+[VIXY PANIC] 2026-03-12T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2026-03-12T00:00:00Z | Blocked for 12 days
+[VIXY FAST PANIC] 2026-03-13T00:00:00Z | Blocked for 12 days
+[REASON] ATR profit target hit, RSI2 extremely overbought, RSI3 extremely overbought
+[31mSELL DELL_GoogleFinance_AutoUpToDate 2026-03-13T00:00:00Z @ 150.9362419 → 5.44%[0m
+[VIXY PANIC] 2026-03-18T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2026-03-19T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2026-03-20T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2026-03-20T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2026-03-23T00:00:00Z | Blocked for 15 days
+[VIXY PANIC] 2026-03-24T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2026-03-24T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2026-03-26T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2026-03-26T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2026-03-27T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2026-03-27T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2026-03-30T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2026-03-30T00:00:00Z | Blocked for 12 days
+[32mBUY DELL_GoogleFinance_AutoUpToDate 2026-03-30T00:00:00Z @ 163.9174356[0m
+[32mBUY DELL_GoogleFinance_AutoUpToDate 2026-03-31T00:00:00Z @ 163.3898258[0m
+[VIXY PANIC] 2026-04-21T00:00:00Z | Blocked for 15 days
+[VIXY PANIC] 2026-04-24T00:00:00Z | Blocked for 15 days
+[32mBUY DELL_GoogleFinance_AutoUpToDate 2026-04-29T00:00:00Z @ 205.3399106[0m
+[REASON] ATR profit target hit, RSI2 extremely overbought, RSI3 extremely overbought
+[31mSELL DELL_GoogleFinance_AutoUpToDate 2026-05-01T00:00:00Z @ 209.8428912 → 2.19%[0m
+[32mBUY DELL_GoogleFinance_AutoUpToDate 2026-05-19T00:00:00Z @ 234.8938411[0m
+[REASON] ATR profit target hit, RSI2 extremely overbought, RSI3 extremely overbought
+[31mSELL DELL_GoogleFinance_AutoUpToDate 2026-05-28T00:00:00Z @ 316.5565431 → 34.77%[0m
+[32mBUY DELL_GoogleFinance_AutoUpToDate 2026-06-04T00:00:00Z @ 421.393121[0m
+[VIXY PANIC] 2026-06-05T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2026-06-05T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2026-06-09T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2026-06-09T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2026-06-10T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2026-06-10T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2026-06-23T00:00:00Z | Blocked for 15 days
+[VIXY PANIC] 2026-06-24T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2026-06-24T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2026-06-26T00:00:00Z | Blocked for 15 days
+[32mBUY DELL_GoogleFinance_AutoUpToDate 2026-06-26T00:00:00Z @ 398.8682334[0m
+[VIXY PANIC] 2026-07-17T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2026-07-17T00:00:00Z | Blocked for 12 days
+[32mBUY DELL_GoogleFinance_AutoUpToDate 2026-07-17T00:00:00Z @ 395.723136[0m
+[VIXY FAST PANIC] 2026-07-20T00:00:00Z | Blocked for 12 days
+[VIXY PANIC] 2026-07-22T00:00:00Z | Blocked for 15 days
+[VIXY PANIC] 2026-07-23T00:00:00Z | Blocked for 15 days
+[REASON] ATR profit target hit, RSI2 extremely overbought, RSI3 extremely overbought
+[31mSELL DELL_GoogleFinance_AutoUpToDate 2026-07-23T00:00:00Z @ 439.34 → 11.02%[0m
+[VIXY FAST PANIC] 2026-07-24T00:00:00Z | Blocked for 12 days
+[VIXY FAST PANIC] 2026-07-27T00:00:00Z | Blocked for 12 days
+[32mBUY DELL_GoogleFinance_AutoUpToDate 2026-07-27T00:00:00Z @ 426.91[0m
+[VIXY PANIC] 2026-07-28T00:00:00Z | Blocked for 15 days
+[VIXY PANIC] 2026-07-29T00:00:00Z | Blocked for 15 days
+[VIXY FAST PANIC] 2026-07-29T00:00:00Z | Blocked for 12 days
+[REASON] ATR profit target hit, RSI2 extremely overbought, RSI3 extremely overbought
+[31mSELL DELL_GoogleFinance_AutoUpToDate 2026-08-03T00:00:00Z @ 429.02 → 0.49%[0m
+[SAVED] C:/Users/Maxim/My Drive/Trading/Trading_Bot_Officiel/Job_Trading_Or_Software/github_trading_backtester/storage/default/vanilla/DELL_GoogleFinance_AutoUpToDate_signals.csv (rewrote 271 total signals)
+🧹 Deleted old multi-signal combined file.
+[SAVED] Combined & sorted multi-signal file → C:/Users/Maxim/My Drive/Trading/Trading_Bot_Officiel/Job_Trading_Or_Software/github_trading_backtester/storage/default/vanilla/hybrid_v3_all_multi_signals.csv (275 total signals)
+✅ Deduplicated 275 unique rows in multi-signal file.
+
+=== Latest Signal per Symbol ===
+DELL_GoogleFinance_AutoUpToDate | 2026-08-05T00:00:00Z → SELL @ 462.7
+=================================
+⚙️ Enforcing ONE-TRADE mode across all symbols...
+[SAVED] Combined signal file → C:/Users/Maxim/My Drive/Trading/Trading_Bot_Officiel/Job_Trading_Or_Software/github_trading_backtester/storage/default/vanilla/hybrid_v3_all_signals.csv
+Earliest trade: DELL_GoogleFinance_AutoUpToDate from 2020-06-03T00:00:00Z to 2020-06-11T00:00:00Z
+Latest   trade: DELL_GoogleFinance_AutoUpToDate from 2026-07-27T00:00:00Z to 2026-08-03T00:00:00Z
+[SAVED] C:/Users/Maxim/My Drive/Trading/Trading_Bot_Officiel/Job_Trading_Or_Software/github_trading_backtester/storage/default/vanilla/hybrid_v3_all_trades.csv
+[CLONED] C:/Users/Maxim/My Drive/Trading/Trading_Bot_Officiel/Job_Trading_Or_Software/github_trading_backtester/storage/default/vanilla/hybrid_v3_all_trades_With_Buys.csv
+[WITH_BUYS] No open position found in log; cloned file has closed trades only.
+
+Yearly Breakdown (starting $50000.0) ---------------------
+2020: Trades=9 | Start=$50000.0 | End=$64995.08 | Compounded=29.99% | Non-Comp=28.37%
+2021: Trades=21 | Start=$64995.08 | End=$128416.16 | Compounded=97.58% | Non-Comp=70.65%
+2022: Trades=2 | Start=$128416.16 | End=$132143.15 | Compounded=2.9% | Non-Comp=3.15%
+2023: Trades=13 | Start=$132143.15 | End=$146533.74 | Compounded=10.89% | Non-Comp=10.92%
+2024: Trades=16 | Start=$146533.74 | End=$184855.45 | Compounded=26.15% | Non-Comp=26.3%
+2025: Trades=13 | Start=$184855.45 | End=$268327.52 | Compounded=45.16% | Non-Comp=40.16%
+2026: Trades=8 | Start=$268327.52 | End=$368707.35 | Compounded=37.41% | Non-Comp=38.08%
+-------------------------------------------------------------
+Yearly (Current, Fees+Slippage)
+Year  Trades  Start        End          Compounded
+2020  9       $50000.00    $64428.10        28.86%
+2021  21      $64428.10    $124731.22       93.60%
+2022  2       $124731.22   $128097.99        2.70%
+2023  13      $128097.99   $140226.16        9.47%
+2024  16      $140226.16   $174124.26       24.17%
+2025  13      $174124.26   $249570.67       43.33%
+2026  8       $249570.67   $340289.58       36.35%
+-------------------------------------------------------------
+-------------------------------------------------------------
+Total Trades: 82
+Winning Trades: 58
+Losing Trades: 24
+Win Rate: 70.73%
+Profit Factor: 3.29
+-------------------------------------------------------------
+Average Yearly Return: 35.73%
+Median Yearly Return: 29.99%
+Best Year: 97.58%
+Worst Year: 2.9%
+Volatility (Std Dev): 28.63%
+Sharpe Ratio: 1.25
+Sortino Ratio: 0
+-------------------------------------------------------------
+💰 Final Equity (2020→2026): $368707.35
+📈 Verified CAGR: 38.24%
+-------------------------------------------------------------
+💸 Adjusted for fees & slippage:
+   Trades: 82 | Fees total (fixed) est: $0 | Percent fees (bps rt): 0.0
+   Slippage (bps rt): 10.0
+   → Realistic CAGR ≈ 36.46%
+   → Realistic Final Equity ≈ $340290
+-------------------------------------------------------------
+-------------------------------------------------------------
+[DONE] Yearly breakdown saved to C:/Users/Maxim/My Drive/Trading/Trading_Bot_Officiel/Job_Trading_Or_Software/github_trading_backtester/storage/default/vanilla/hybrid_v3_yearly_breakdown.csv
+📉 Max Drawdown: 14.28%
+
+=== WHAT-IF: Next-Day Open Execution (no strategy refactor) ===
+-------------------------------------------------------------
+Yearly (Next-Open, Fees+Slippage)
+Year  Trades  Start        End          Compounded
+2020  9       $50000.00    $63859.63        27.72%
+2021  21      $63859.63    $111505.93       74.61%
+2022  2       $111505.93   $114010.62        2.25%
+2023  13      $114010.62   $122241.79        7.22%
+2024  16      $122241.79   $140902.71       15.27%
+2025  13      $140902.71   $215230.63       52.75%
+2026  8       $215230.63   $427485.31       98.62%
+-------------------------------------------------------------
+-------------------------------------------------------------
+💸 Adjusted for fees & slippage (Next-Open using knobs):
+   Trades: 82
+   Fixed fee per side: $0.0 | Percent fee (round-trip): 0.0 bps | Slippage (round-trip): 10.0 bps
+   Fixed-fee estimate (rough): $0.00
+   → Realistic CAGR ≈ 41.60%
+   → Realistic Final Equity ≈ $427485
+-------------------------------------------------------------
+-------------------------------------------------------------
+Yearly (Next-Open)
+Year  Trades  Start        End          Compounded
+2020  9       $1000.00     $1288.45         28.84%
+2021  21      $1288.45     $2296.25         78.22%
+2022  2       $2296.25     $2352.48          2.45%
+2023  13      $2352.48     $2555.15          8.62%
+2024  16      $2555.15     $2992.36         17.11%
+2025  13      $2992.36     $4628.84         54.69%
+2026  8       $4628.84     $9262.48        100.10%
+-------------------------------------------------------------
+-------------------------------------------------------------
+Next-Open (What-If) vs Current — Yearly
+Year  CurComp   NxtComp   ΔComp    CurEnd       NxtEnd       ΔEnd
+2020    29.99%    28.84%   -1.15%  $64995.08    $1288.45     -63706.63
+2021    97.58%    78.22%  -19.36%  $128416.16   $2296.25     -126119.91
+2022     2.90%     2.45%   -0.45%  $132143.15   $2352.48     -129790.67
+2023    10.89%     8.62%   -2.27%  $146533.74   $2555.15     -143978.59
+2024    26.15%    17.11%   -9.04%  $184855.45   $2992.36     -181863.09
+2025    45.16%    54.69%    9.53%  $268327.52   $4628.84     -263698.68
+2026    37.41%   100.10%   62.69%  $368707.35   $9262.48     -359444.87
+-------------------------------------------------------------
+-------------------------------------------------------------
+Next-Open (What-If) vs Current
+Trades:    82  (skipped 0)
+CAGR:      43.44%   (Δ +5.2 pp)
+PF:        3.58      (Δ +0.29)
+MaxDD:     18.65%         (Δ +4.38 pp)
+Files:
+  • Trades (next-open): C:/Users/Maxim/My Drive/Trading/Trading_Bot_Officiel/Job_Trading_Or_Software/github_trading_backtester/storage/default/vanilla/whatif_nextopen_trades.csv
+  • Yearly (next-open): C:/Users/Maxim/My Drive/Trading/Trading_Bot_Officiel/Job_Trading_Or_Software/github_trading_backtester/storage/default/vanilla/whatif_nextopen_yearly_breakdown.csv
+-------------------------------------------------------------
+   Peak:   2024-07-05  (equity $3637.32)
+   Trough: 2024-09-05  (equity $3118.06)
+   Days peak→trough: 62
+⭐ Rank: ✅ Excellent  (N=82, PF=3.29, Win=70.73%, CAGR=38.24%, MaxDD=14.28%)
+📈 Recovery: 2024-11-01 (+57 days / ~1.9 months)
+Ulcer Index: 3.68
+Calmar Ratio: 2.68
+
+📊 Performance Comparison (CAGR %)
+-------------------------------------------------------------
+Nasdaq-100 (QQQ)            ≈ 13%
+S&P 500                     ≈ 10%
+Berkshire Hathaway          ≈ 20%
+Avg Hedge Fund              ≈ 8–12%
+Renaissance (Medallion)     ≈ 39% (net)
+-------------------------------------------------------------
+[BOT_METRICS] ✅ metrics copied → C:/Users/Maxim/My Drive/Trading/Trading_Bot_Officiel/Job_Trading_Or_Software/github_trading_backtester/storage/default/vanilla/metrics/latest.csv
+[DONE] Summary stats saved to C:/Users/Maxim/My Drive/Trading/Trading_Bot_Officiel/Job_Trading_Or_Software/github_trading_backtester/storage/default/vanilla/hybrid_v3_summary.csv
+Overlap check: ✅ None found
+[INFO] No completed manual trades found yet.
+
+📊 VERIFY TOMORROW ORDERS
+----------------------------------
+Trades: 82
+BUYs  : 82
+SELLs : 82
+✅ PERFECT MATCH
+----------------------------------
+
+[GUI] Process finished with exit code 0.
