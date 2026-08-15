@@ -24,18 +24,6 @@ hold_map = {
 
 base = symbol.split("_").first
 
-#if ["BTC", "BTCUSD", "ETHUSD", "IBIT", "MSTR", "ETHA"].include?(base)
- # hold_map = {
-  #  0 => 10, # Sunday
-   # 1 => 10,
-   # 2 => 10,
-   # 3 => 10,
-   # 4 => 10,
-   # 5 => 10,
-   # 6 => 10 # Saturday
- # }
-#end
-
 if ["BTC", "BTCUSD", "ETHUSD", "ETHA"].include?(base)
 hold_map = {
   0  => 10,
@@ -442,19 +430,7 @@ reason_text = hold_reasons.uniq.join(", ")
 
 msg = "HOLD #{symbol} #{date} @ #{close} → #{reason_text}"
 
-# === VOLUME FILTER RULE ===
-#if avg_volume[i] && volumes[i] && volumes[i] < avg_volume[i] * 0.5
-  # skip low-volume day (<50% of 20-day average)
- # next
-#end
 
-# === VOLUME FILTER RULE (GOOGL-only) ===
-#$vol_cfg = {
-#  "GOOGL_GoogleFinance_AutoUpToDate" => { min: 1.10, max: 3.50 },
- # "FCX_GoogleFinance_AutoUpToDate"   => { min: 1.30, max: 3.0 },
-
- # "NVDA_GoogleFinance_AutoUpToDate"  => { min: 1.20, max: 2.50 },
-#}
 
 # Optional: simple FCX volume sanity (very gentle, won’t block others)
 if symbol.to_s.include?("FCX") && volumes.any? && avg_volume[i] && volumes[i]
@@ -1691,7 +1667,7 @@ if symbol.to_s.split("_").first == "ANET"
         close.to_f
       end
 
-    exit_price = next_open  # ✅ don't overwrite close
+    exit_price = next_open  #  don't overwrite close
 
     puts "[ANET_STOP_NEXT_OPEN] #{symbol} #{date} stop=#{stop_price.round(2)} fill=#{next_open.round(2)} pct=#{anet_stop_pct}" unless $FAST_SWEEP
   end
@@ -1976,6 +1952,6 @@ unless $FAST_SWEEP
   end
   puts "[SAVED] #{signal_path} (rewrote #{signals.size} total signals)"
 end
-return [trades, signals, dates.first, dates.last]   # ✅ add this
+return [trades, signals, dates.first, dates.last]   
 
 end
