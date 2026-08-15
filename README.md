@@ -145,7 +145,7 @@ date,open,high,low,close,volume
 │   ├── config.yml
 │   ├── views/index.erb
 │   └── public/            # CSS and JavaScript
-├── data/clean/            # Local market data (ignored by Git)
+├── data/clean/            # Demo data included; other local data ignored
 ├── storage/               # Generated results (ignored by Git)
 └── docs/images/           # README screenshots
 ```
@@ -178,7 +178,7 @@ Some of the main engineering problems addressed in this project include:
 - Continue dividing the largest engine and reporting modules into smaller objects
 - Add automated tests for indicators, entries, exits, and portfolio accounting
 - Add stronger input validation and user-friendly error messages
-- Include a documented sample dataset and demonstration preset
+- Add a ready-to-use demonstration preset
 - Improve support for separate user sessions
 - Add exportable reports
 - Package the application for easier installation
