@@ -59,8 +59,6 @@ end
 def _flat_f(v); _flat(v).to_f; end
 def _flat_s(v); _flat(v).to_s; end
 
-# 🩵 GUARANTEED METRICS FINALIZER (super safe)
-
 def write_metrics_finalizer!
   path = ENV["METRICS_CSV"].to_s.strip
   return if path.empty?
@@ -77,7 +75,6 @@ def write_metrics_finalizer!
     end
   end
 
-  # Normalize absolutely everything before use
   trades    = ($all_trades.respond_to?(:size) ? $all_trades.size : 0).to_i
   win_val   = safe_flat_f($win_rate)
   pf_val    = safe_flat_f($profit_factor)
