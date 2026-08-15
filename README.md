@@ -37,10 +37,6 @@ The Sinatra interface provides one place to configure a run and review its outpu
 - Simulated position information
 - Saved presets and run history
 
-<!-- Add screenshots after creating the GitHub repository. Example:
-![Backtesting dashboard](docs/images/dashboard.png)
--->
-
 ## Technology
 
 - **Ruby** — backtesting engine, strategy rules, data processing, and statistics
@@ -119,15 +115,15 @@ The application is local by default and is not publicly accessible unless the se
 
 ## Data Format
 
-Historical data is stored locally rather than committed with private credentials. A small sample dataset can be included for demonstration.
+Demonstration datasets for NVDA, DELL, QQQ, and VIXY are included in `data/clean/`. NVDA and DELL can be selected for demonstration backtests, while QQQ and VIXY support benchmark comparisons and market filters.
 
-Expected fields:
+Additional local market-data files placed in `data/clean/` are ignored by Git unless explicitly allowed in `.gitignore`.
+
+Each CSV uses the following fields:
 
 ```text
 date,open,high,low,close,volume
 ```
-
-Column names or ordering may differ depending on the data provider and import script. Update this section to match the final sample CSV included in the repository.
 
 ## Project Structure
 
@@ -206,4 +202,6 @@ Maxime Romano
 
 ## License
 
-Choose and add a license before accepting outside contributions. If no license is included, the source remains copyrighted and others do not automatically receive permission to reuse it.
+Copyright © 2026 Maxime Romano. All rights reserved.
+
+This repository is publicly available for portfolio and evaluation purposes. No permission is granted to copy, modify, redistribute, or commercially use the code.
