@@ -1,5 +1,5 @@
 # =======================================================
-# 🩵 UNIVERSAL METRIC NORMALIZER (prevents Hash→Integer crash)
+#  UNIVERSAL METRIC NORMALIZER (prevents Hash→Integer crash)
 # =======================================================
 def normalize_global_metrics!
   %i[$profit_factor $win_rate $real_cagr $max_dd].each do |var|
