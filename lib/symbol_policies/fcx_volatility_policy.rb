@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
-# Compatibility placeholder because the uploaded program referenced this file,
-# but the original FCX policy implementation was not included in the upload.
+# FCX-specific behavior is unavailable in the portfolio version.
+# Other demonstration symbols use the default position-sizing policy.
 # NVDA and DELL simulations do not use the FCX-specific branch.
 module SymbolPolicies
   module FCXVolatilityPolicy
