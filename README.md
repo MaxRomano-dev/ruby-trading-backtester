@@ -6,6 +6,10 @@ The application was created to turn a command-line research tool into a more acc
 
 > This is an educational software and historical-simulation project. It does not connect to a brokerage or place live trades. Historical results do not predict future performance.
 
+## Dashboard Preview
+
+[![Ruby Trading Backtester dashboard](docs/images/GUI_image1.jpg)](docs/images/GUI_image1.jpg)
+
 ## Highlights
 
 - Run backtests for one symbol or a group of symbols
