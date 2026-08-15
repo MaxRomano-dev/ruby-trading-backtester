@@ -1,6 +1,0 @@
-SYMBOL: NVDA_GoogleFinance_AutoUpToDate
-DATE:   2026-07-28T00:00:00Z
-PRICE:  197.01
-
-[BUY_REASON] RSI2 = 3.92 (below oversold 18 → TRIGGERED), RSI3 = 4.62 (below oversold 18 → TRIGGERED), ATR available (7.73)
-[BUY_FILTERS] SMA0 filter ACTIVE (price 197.01 > SMA0 192.82 → PASS), Breakout state: "HOLD"
