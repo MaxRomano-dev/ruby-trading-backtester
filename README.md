@@ -156,11 +156,11 @@ date,open,high,low,close,volume
 │   ├── config.yml
 │   ├── views/index.erb
 │   └── public/            # CSS and JavaScript
-├── data/clean/            # Demo data included; other local data ignored
-├── storage/               # Generated results (ignored by Git)
-└── docs/images/           # README screenshots
+├── data/clean/             # Demo data included; other local data ignored
+├── storage/                # Generated results (ignored by Git)
+├── docs/images/            # README screenshots
 ├── test/                   # Automated Ruby tests
-├── .github/workflows/      # Automatic GitHub test workflow
+└── .github/workflows/      # Automatic GitHub test workflow
 ```
 
 The command-line engine is separated from the browser interface so each can be run and maintained independently.
