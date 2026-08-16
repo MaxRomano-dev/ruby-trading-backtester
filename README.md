@@ -113,6 +113,17 @@ http://localhost:4567
 
 The application is local by default and is not publicly accessible unless the server configuration is intentionally changed.
 
+
+## Automated Tests
+
+The test suite checks RSI calculations, trading-day handling, performance statistics, ATR calculations, CSV separator detection, grading, and duplicate-order prevention.
+
+Run it from the project root:
+
+```powershell
+ruby .\test\test_helpers.rb
+```
+
 ## Data Format
 
 Demonstration datasets for NVDA, DELL, QQQ, and VIXY are included in `data/clean/`. NVDA and DELL can be selected for demonstration backtests, while QQQ and VIXY support benchmark comparisons and market filters.
@@ -148,6 +159,8 @@ date,open,high,low,close,volume
 ├── data/clean/            # Demo data included; other local data ignored
 ├── storage/               # Generated results (ignored by Git)
 └── docs/images/           # README screenshots
+├── test/                   # Automated Ruby tests
+├── .github/workflows/      # Automatic GitHub test workflow
 ```
 
 The command-line engine is separated from the browser interface so each can be run and maintained independently.
@@ -176,7 +189,7 @@ Some of the main engineering problems addressed in this project include:
 ## Planned Improvements
 
 - Continue dividing the largest engine and reporting modules into smaller objects
-- Add automated tests for indicators, entries, exits, and portfolio accounting
+- Expand automated tests to cover entries, exits, and portfolio accounting
 - Add stronger input validation and user-friendly error messages
 - Add a ready-to-use demonstration preset
 - Improve support for separate user sessions
